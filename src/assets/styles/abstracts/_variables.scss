@@ -1,0 +1,124 @@
+:root {
+    /* principal color */
+    --primaryColor: #9a69c3;
+    --secondaryColor: #101621;
+    --thirdColor: #101621;
+
+    --disabledColor: #7f7f7f;
+    --whiteColor: #ffffff;
+    --fillInput: #ffffff;
+    --greyColor: #E9ECF4;
+    --hoverColor: #f8f9fb;
+
+    /* background */
+    --backgroundColor: #f4f4f4;
+
+    /* Transparent Color */
+    --whiteColorTransparent: rgba(255, 255, 255, 0.7);
+    --darkColorTransparent: rgba(0, 0, 0, 0.06);
+    --scrollColor: rgba(0, 0, 0, 0.3);
+
+    /* Font color */
+    --darkFontColor: #242424;
+    --lightFontColor: #222e43;
+
+    /* Success color */
+    --succesColor: #1b9a22;
+    --darksuccesColor: #26822b;
+
+    /* Warning color */
+    --warningColor: #FEA23C;
+    --darkwarningColor: rgb(196, 111, 0);
+
+    /* Danger color */
+    --dangerColor: #df0b0b;
+    --darkdangerColor: #ff2600;
+
+    /* linear color */
+    --linearColor1: linear-gradient(to right, #00AEEF 0%, #9e61c1 100%); 
+    --linearColor2: linear-gradient(to right, #1A90E8 10%, #f7b50e 100%);
+    --transitionColor: linear-gradient(180deg, rgba(247, 247, 247,0) 0%, rgba(247, 247, 247,1) 100%);
+    /* Supplement color */
+    --color1: #FFB000;
+    --color2: #D30074;
+    --color3: #e96e16;
+    --color4: #06b91e;
+
+    /* For blur background */
+    --blurcolor1: #f3aacb;
+    --blurcolor2: #7eb7e6;
+    --blurcolor3: #99e29a;
+
+    --logoIcon: url('../../branding/supernova/logo512.png');
+    --styleBackground: url('../../branding/img/bg_blur_dark.png');
+    --pointBackground: url('../../branding/background/BackgroundCard_black.png');
+    --logoMinimizeIcon: url('../../image/logo/emit.ico');
+
+    /* Font family */
+    --DefaultFont: Poppins;
+    --TitleFont: Poppins;
+}
+
+
+.darktheme {
+    /* principal color */
+    --primaryColor: #9034ff;
+    --secondaryColor: #101621;
+    --thirdColor: #ffffff;
+
+    --disabledColor: #7f7f7f;
+    --whiteColor: #030239;
+    --fillInput: #101621;
+    --greyColor: #1c2638;
+    --hoverColor: rgba(255, 255, 255, 0.1);
+
+    /* background */
+    --backgroundColor: #090d14;
+
+    /* Transparent Color */
+    --whiteColorTransparent: rgba(255, 255, 255, 0.05);
+    --darkColorTransparent: rgba(255, 255, 255, 0.06);
+    --scrollColor: rgba(255, 255, 255, 0.368);
+
+    /* Font color */
+    --darkFontColor: #ffffff;
+    --lightFontColor: #222e43;
+
+    /* Success color */
+    --succesColor: #1b9a22;
+    --darksuccesColor: #26822b;
+
+    /* Warning color */
+    --warningColor: #FEA23C;
+    --darkwarningColor: rgb(196, 111, 0);
+
+    /* Danger color */
+    --dangerColor: #df0b0b;
+    --darkdangerColor: #ff2600;
+
+    /* linear color */
+    --linearColor1: linear-gradient(to right, #6162C1 0%, #00AEEF 100%);
+    --linearColor2: linear-gradient(to right, #1A90E8 10%, #f7b50e 100%);
+    --transitionColor: linear-gradient(180deg, rgba(9, 13, 20,0) 0%, rgba(9, 13, 20,1) 100%);
+
+    /* Supplement color */
+    --color1: #FFB000;
+    --color2: #D30074;
+    --color3: #e96e16;
+    --color4: #06b91e;
+
+    /* For blur background */
+    --blurcolor1: #f3aacb;
+    --blurcolor2: #7eb7e6;
+    --blurcolor3: #99e29a;
+
+    --logoIcon: url('../../image/logo/EMIT_Logo_inlight.png');
+    --styleBackground: url('../../branding/img/bg_blur_dark.png');
+    --pointBackground: url('../../../assets/branding/background/BackgroundCard_black.png');
+    --logoMinimizeIcon: url('../../image/logo/EMIT_Logo_inlight.png');
+
+    /* Font family */
+    // font-family: 'Epilogue', sans-serif;
+    --DefaultFont: Poppins;
+    --TitleFont: Poppins;
+}

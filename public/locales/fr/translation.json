@@ -1,0 +1,38 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "A propos",
+    "solution": "Solutions",
+    "school": "Ecole",
+    "contact": "Contact",
+    "signIn": "Se connecter",
+    "signUp": "Inscription",
+    "mode": "Mode sombre"
+  },
+
+  "banner": {
+    "lTitle": "Déverrouillez votre potentiel avec nos cours en ligne",
+    "bTitle1": "Soyez plus brillant",
+    "bTitle2": "que les étoiles",
+    "bTitle3": "éclairez votre propre",
+    "bTitle4": "chemin",
+    "sTitle": "Découvrez l'avenir de l'éducation avec SIRIUS, où le savoir rencontre l'innovation. Développer vos compétences, tout en repoussant les limites de votre potentiel."
+  },
+
+  "about": {
+    "lTitle": "A propos",
+    "Title": "Votre partenaire dans votre montée intellectuelle.",
+    "paragraphe1": "Votre passerelle vers l'avenir de l'éducation en ligne. Notre plateforme a été créée pour inspirer, éduquer et ouvrir de nouvelles opportunités pour tous ceux qui ont soif de connaissances. Que vous soyez un étudiant avide, un professionnel cherchant à élargir vos compétences, ou simplement quelqu'un qui souhaite apprendre quelque chose de nouveau, SIRIUS est là pour vous.",
+    "info1": "Flexibilité d'Apprentissage<",
+    "info2": "Cours Variés",
+    "info3": "Recherche d'Ecoles",
+    "info4": "Certificats et Diplômes",
+    "btn": "Regarder la présentation"
+  },
+
+  "cta1": {
+    "Title": "Découvrez un monde d'apprentissage illimité.",
+    "paragraphe": "SIRIUS, là où les rêves se transforment en compétences. Rejoignez-nous pour explorer, apprendre et grandir!",
+    "btn": "Inscrivez-vous dès maintenant"
+  }
+}

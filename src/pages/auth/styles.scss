@@ -1,0 +1,128 @@
+.authentification-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-color: var(--backgroundColor);
+    background-image: url('../../assets/branding/img/banner_bg.png');
+    background-size: cover;
+}
+
+.authentification-content{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.MiddleContent{
+    z-index: 10;
+    height: 76vh;
+    margin: auto;
+    display: flex;
+    width: 85%;
+    max-width: 1500px;
+    padding: 15px 70px;
+    align-content: center;
+    align-items: center;
+}
+
+.signForm{
+    // box-shadow: 8px 8px 24px 0 rgba(9,13,20,0.4),-4px -4px 8px 0 rgba(224,224,255,0.04),0 1px 1px 0 rgba(9,13,20,0.4);
+    // border: solid 1px rgba(245,247,250,0.03);
+    // background-image: linear-gradient(101deg,rgba(245,247,250,.02),rgba(245,247,250,.06) 12%,rgba(245,247,250,0));
+    backdrop-filter: blur(2px);
+    background-color: var(--fillInput);
+    border-radius: 15px;
+    margin-top: 20px;
+    color: var(--darkFontColor);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.signForm .inputform{
+    cursor: pointer;
+    padding: 10px;
+    transition: .4s ease;
+}
+
+.SignUp2 .signForm {
+    text-align: right;
+    justify-content: flex-end;
+    width: 100%;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.signForm .inputform:first-child{    
+    border-radius: 15px 15px 0px 0px;
+}
+.signForm .inputform:last-child{
+    border-radius: 0px 0px 15px 15px;
+}
+
+.signForm .inputform:hover{
+    color: var(--darkFontColor);
+    background-color: var(--primaryColor);
+}
+
+.signForm .inputform:first-child{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.signForm .inputform .input-content input:first-child{    
+    border-radius: 15px 15px 0px 0px;
+}
+.signForm .inputform .input-content input:last-child{
+    border-radius: 0px 0px 15px 15px;
+}
+
+.signForm .inputform .input-content {
+    display: flex;
+    align-items: center;
+    margin: 0px 8px;
+}
+
+.signForm .inputform .input-content img{
+    width: 6%;
+}
+
+
+.signForm .inputform .input-content input{
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px 10px 25px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    font-family: "Poppins";
+    color: var(--darkFontColor);
+    background-color: inherit;
+}
+
+.signForm .inputform .input-content input:hover{
+    color: #fff;
+    placeholder: #fff;
+}
+.signForm .inputform .input-content input:hover::placeholder{
+    color: #fff;
+}
+
+.authLoadIcon{
+    animation: 1s turnAround infinite linear; 
+}
+
+@media screen and (max-width: 770px){
+    .MiddleContent{
+        padding: 15px 10px;
+        margin-top: 30px;
+        margin-bottom: 80px;
+        height: 500px;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .signForm{
+        width: 100%;
+    }
+    
+}

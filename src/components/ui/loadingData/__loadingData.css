@@ -1,0 +1,24 @@
+.loading-Data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+.loading-Data .loading-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loading-Data .loading-content p{
+    /* position: relative;
+    top: -90px; */
+    color: var(--darkFontColor);
+    font-weight: 600;
+}
+
+.loading-Data img{ 
+    width: 200px;
+}

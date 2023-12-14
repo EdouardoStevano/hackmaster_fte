@@ -1,0 +1,110 @@
+.middle-explore {
+  display: flex;
+  height: 100vh;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.middle-explore .cityExplore {
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+.middle-explore .exploreTitle {
+  position: relative;
+  left: 200px;
+  z-index: 2;
+  width: 500px;
+}
+.middle-explore .guide-navigation {
+  width: 200px;
+  position: relative;
+  left: 0%;
+  margin-top: 30px;
+}
+.middle-explore .guide-navigation .direction {
+  padding: 20px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.middle-explore .guide-navigation .direction.up {
+  background-color: var(--whiteColorTransparent);
+  width: 50px;
+  position: relative;
+  left: 40%;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 3px;
+}
+.middle-explore .guide-navigation .direction.up span {
+  position: relative;
+  top: -60px;
+  left: 40%;
+  background-color: var(--color1);
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.middle-explore .guide-navigation .direction.down {
+  background-color: var(--whiteColorTransparent);
+  width: 50px;
+  position: relative;
+  left: 40%;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 3px;
+}
+.middle-explore .guide-navigation .direction.down span {
+  position: relative;
+  top: -60px;
+  left: 7px;
+  background-color: var(--color1);
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.middle-explore .guide-navigation .horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+.middle-explore .guide-navigation .horizontal .right {
+  background-color: var(--whiteColorTransparent);
+  width: 50px;
+  position: relative;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 3px;
+}
+.middle-explore .guide-navigation .horizontal .right span {
+  position: relative;
+  top: -60px;
+  left: 40%;
+  background-color: var(--color1);
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.middle-explore .guide-navigation .horizontal .left {
+  background-color: var(--whiteColorTransparent);
+  width: 50px;
+  position: relative;
+  left: 10px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 3px;
+}
+.middle-explore .guide-navigation .horizontal .left span {
+  position: relative;
+  top: -60px;
+  left: 40%;
+  background-color: var(--color1);
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}/*# sourceMappingURL=mainExplore.css.map */

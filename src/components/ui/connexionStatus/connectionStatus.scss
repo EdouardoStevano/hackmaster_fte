@@ -1,0 +1,50 @@
+.ConnectionStatus {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px 40px 20px 40px;
+    z-index: 999;
+    border-radius: 15px;
+    text-align: left;
+    transition: opacity 0.3s ease;
+    animation: swipeUp 1s ease-in-out;
+  }
+
+  .ConnectionStatus h1{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .ConnectionStatus p{
+    font-size: 13px;
+    text-align: justify;
+  }
+  
+  .online {
+    background-color: var(--succesColor);
+    color: white;
+  }
+  
+  .ConnectionStatus.offline {
+    background-color: #ff2600c9;
+    backdrop-filter: blur(10px);
+    /* border: 5px solid rgba(241, 210, 204, 0.344); */
+    color: white;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px; /* Position verticale à partir du haut de ConnectionStatus */
+    right: 10px; /* Position horizontale à partir de la droite de ConnectionStatus */
+    cursor: pointer;
+    font-size: 16px;
+    color: #333; /* Couleur du bouton de fermeture */
+  }
+  
+  .close-button:hover {
+    color: #f00; /* Couleur du bouton de fermeture au survol */
+  }
+  

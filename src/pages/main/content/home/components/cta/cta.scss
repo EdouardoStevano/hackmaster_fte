@@ -1,0 +1,17 @@
+.callToAction-container{
+    background-image: url('../../../../../../assets/branding/svg/isometric-squares-light.svg');
+    background-size: cover;
+    padding: 70px 0px;
+    background-color: var(--primaryColor);
+
+    .super-container-p80.cta{
+        align-items: start;
+        justify-content: flex-start;
+        flex-direction: column;
+        color: #fff;
+        
+        h1{
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.SappinNoel-aanime svg g path:nth-child(1) {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  stroke: var(--darkFontColor);
+  animation: annimationSappin 6s;
+}
+.SappinNoel-aanime svg g path:nth-child(2) {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  stroke: var(--darkFontColor);
+  animation: annimationetoile 2s;
+  animation-delay: 3s;
+}
+.SappinNoel-aanime svg g path:nth-child(3) {
+  stroke-dasharray: 72;
+  stroke-dashoffset: 72;
+  stroke: var(--darkFontColor);
+  animation: annimationePieds 1s;
+}
+
+.SappinNoel-aanime.active svg g path:nth-child(1) {
+  stroke-dashoffset: 1400;
+  transition-property: stroke-dashoffset;
+  transition-duration: 6s;
+  transition-delay: 1s;
+}
+.SappinNoel-aanime.active svg g path:nth-child(2) {
+  stroke-dashoffset: 120;
+  transition-property: stroke-dashoffset;
+  transition-duration: 2s;
+  transition-delay: 0s;
+}
+.SappinNoel-aanime.active svg g path:nth-child(3) {
+  stroke-dashoffset: 144;
+  transition-property: stroke-dashoffset;
+  transition-duration: 1s;
+  transition-delay: 7s;
+}
+
+@keyframes annimationSappin {
+  0% {
+    stroke-dashoffset: 700;
+  }
+  100% {
+    stroke-dashoffset: 1400;
+  }
+}
+@keyframes annimationetoile {
+  0% {
+    stroke-dashoffset: 60;
+  }
+  100% {
+    stroke-dashoffset: 120;
+  }
+}
+@keyframes annimationePieds {
+  0% {
+    stroke-dashoffset: 72;
+  }
+  100% {
+    stroke-dashoffset: 144;
+  }
+}/*# sourceMappingURL=sappinAnnimer.css.map */

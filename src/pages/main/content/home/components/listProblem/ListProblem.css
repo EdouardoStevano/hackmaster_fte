@@ -1,0 +1,120 @@
+.list-problem-bloc {
+  color: var(--darkFontColor);
+  background-image: url("../../../../../../assets/branding/background/EDS_point.png");
+  background-color: var(--backgroundColor);
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+.list-problem-bloc .listpbm {
+  width: 80vw;
+  background-image: url("../../../../../../assets/branding/img/bg_blur_2.png");
+  background-size: 1300px;
+  background-position: -100px 100px;
+  background-repeat: no-repeat;
+}
+.list-problem-bloc .listpbm .section-list-problem:nth-child(2n+1) {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin: 100px auto;
+  position: relative;
+  height: auto;
+}
+.list-problem-bloc .listpbm .section-list-problem:nth-child(2n+1) .img-container-list-problem {
+  position: sticky;
+  top: 50px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-problem-bloc .listpbm .section-list-problem:nth-child(2n+1) .img-container-list-problem img {
+  border-radius: 20px;
+  transform: rotate(-5deg);
+  transform-origin: bottom;
+  position: relative;
+  left: 180px;
+  animation: 5s float_Animation3 infinite ease-in-out;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+.list-problem-bloc .listpbm .section-list-problem:nth-child(2n+1) .img-container-list-problem .card_behind {
+  background-color: var(--fillInput);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  height: 500px;
+  box-shadow: 8px 8px 24px 0 rgba(9, 13, 20, 0.4), -4px -4px 8px 0 rgba(224, 224, 255, 0.04), 0 1px 1px 0 rgba(9, 13, 20, 0.4);
+  border: solid 1px rgba(245, 247, 250, 0.06);
+  background-image: linear-gradient(101deg, rgba(245, 247, 250, 0.12), rgba(245, 247, 250, 0.06) 52%, rgba(245, 247, 250, 0));
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  width: 400px;
+  animation: 5s float_Animation4 infinite;
+  animation-delay: 2s;
+  transform: rotate(5deg);
+  position: relative;
+  z-index: 5;
+  right: 240px;
+}
+.list-problem-bloc .listpbm .section-list-problem:nth-child(2n+1) .message-content-list-problem {
+  height: 140vh;
+  width: 600px;
+  position: relative;
+  left: -180px;
+  display: flex;
+  margin-left: 0px;
+  justify-content: center;
+  align-items: center;
+}
+.list-problem-bloc .listpbm .section-list-problem:nth-child(2n+1) .message-content-list-problem p {
+  font: 13px;
+}
+.list-problem-bloc .listpbm .section-list-problem:nth-child(2n+1) .message-content-list-problem .title {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.list-problem-bloc .listpbm .section-list-problem:nth-child(2n+1) .message-content-list-problem .title h1 {
+  font-size: 40px;
+  width: 50%;
+}
+.list-problem-bloc .listpbm .section-list-problem:nth-child(2n+1) .message-content-list-problem .title p {
+  width: 50%;
+  font-size: 12px;
+  padding: 10px;
+  border-bottom: 1px solid var(--darkFontColor);
+}
+.list-problem-bloc .listpbm .section-list-problem:nth-child(2n+2) {
+  display: flex;
+  gap: 60px;
+  margin: 100px 0px;
+  height: auto;
+  flex-direction: row-reverse;
+}
+.list-problem-bloc .listpbm .section-list-problem:nth-child(2n+2) .img-container-list-problem {
+  position: sticky;
+  top: 50px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-problem-bloc .listpbm .section-list-problem:nth-child(2n+2) .img-container-list-problem img {
+  transform: rotate(5deg);
+  margin-right: 60px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  animation: 5s float_Animation3 infinite ease-in-out;
+}
+.list-problem-bloc .listpbm .section-list-problem:nth-child(2n+2) .message-content-list-problem {
+  height: 140vh;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=ListProblem.css.map */

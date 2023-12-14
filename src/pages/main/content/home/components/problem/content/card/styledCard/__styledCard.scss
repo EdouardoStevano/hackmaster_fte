@@ -1,0 +1,85 @@
+.card-bloc {
+  width: 350px;
+  height: 500px;
+  background-color: #333;
+  position: relative;
+
+  .card-image-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    filter: saturate(10%);
+    transition: filter 1s;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .content-card-bloc {
+      background-color: #030303;
+      position: absolute;
+      bottom: -20;
+      color: white;
+      padding: 10px;
+      bottom: -150px;
+
+      p.title {
+        font-family: var(--DefaultFont);
+        font-size: 32px;
+      }
+      hr {
+        width: 10%;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .squaire {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #333;
+    z-index: 0;
+  }
+
+  .squaire.squaire-1-cards {
+    top: 0;
+    left: 0;
+    background-color: var(--secondaryColor);
+  }
+  .squaire.squaire-2-cards {
+    bottom: 0;
+    right: 0;
+    background-color: var(--primaryColor);
+    opacity: 0.2;
+  }
+  cursor: pointer;
+}
+.card-bloc:hover {
+  .card-image-content {
+    filter: none;
+    transition: filter 1s;
+
+    .content-card-bloc {
+      hr {
+        transition: width 1s ease-in;
+        width: 50%;
+      }
+    }
+  }
+
+  .squaire.squaire-1-cards {
+    transition: transform 200ms ease-in;
+    transform: translate(-30px, -30px);
+  }
+
+  .squaire.squaire-2-cards {
+    transition: transform 200ms ease-in;
+    transform: translate(30px, 30px);
+  }
+}
+
+// .card-bloc.active {
+//   animation: swipeFadeUpCard 0.5s ease-in;
+// }

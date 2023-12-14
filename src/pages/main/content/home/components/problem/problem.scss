@@ -1,0 +1,85 @@
+.Problem-bloc {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  div {
+    text-align: center;
+    font-size: 150px;
+    font-weight: 600;
+    color: var(--darkFontColor);
+    transform: translateY(100px);
+    .letters:not(up) {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    .letters.up {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    // .letters.down {
+    //   transform: translateY(-100px);
+    // }
+    // .letters.left {
+    //   transform: translateY(-10px);
+    // }
+    // .letters.rigth {
+    //   transform: translateY(10px);
+    // }
+
+    .svgClock svg {
+      width: 100px;
+      height: 100px;
+      scale: 0;
+      transform: translateY(20px);
+    }
+
+    .coconut svg {
+      width: 100px;
+      height: 100px;
+      transform: translateY(120px);
+    }
+    .cactus svg {
+      width: 170px;
+      height: 170px;
+      // position: absolute;
+      // top: -17px;
+      // left: -40px;
+      // scale: 0;
+    }
+  }
+}
+.card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: nowrap;
+}
+
+.card-element {
+  transform: translateY(100px);
+  opacity: 0;
+}
+.fusee {
+  transform-origin: center;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  svg {
+    width: 100px;
+    height: 100px;
+    transform: rotate(90deg);
+  }
+}
+#Tracé_1 {
+  opacity: 1;
+}
+
+.chemin {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}

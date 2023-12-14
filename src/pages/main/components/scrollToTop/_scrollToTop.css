@@ -1,0 +1,31 @@
+.scroll-to-bottom-button {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    background-color: var(--whiteColorTransparent);
+    color: #fff;
+    border: none;
+    z-index: 50;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(1);
+    transition: 0.6s ease-in-out;
+    border: 2px dotted rgba(0, 0, 0, 0);
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .scroll-to-bottom-button  img{
+    animation: swipeFadeUpInfinite 1s ease infinite;
+  }
+
+  .scroll-to-bottom-button:hover{
+    transform: scale(1.2);
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.1);
+    border: 2px dotted rgba(0, 0, 0, 0.2);
+  }
+  
+  .scroll-to-bottom-button.visible {
+    opacity: 1;
+  }
+  

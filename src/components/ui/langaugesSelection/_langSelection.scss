@@ -1,0 +1,120 @@
+/* .language-picker form select option{
+    padding: 50px;
+}
+
+.language-picker form, .language-picker form select{
+    background-color: transparent;
+    color: var(--darkFontColor);
+    border: none;
+    font-size: 12px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.language-picker form select:hover{
+    border: 1px solid var(--primaryColor);
+}
+
+.language-picker form select option{
+    background-color: var(--backgroundColor);
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+} */
+
+/* LanguagePicker.css */
+
+/* LanguagePicker.css */
+
+
+.language-picker {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+  }
+  
+  .language-picker-toggle {
+    background-color: transparent;
+    border: transparent;
+    color: var(--darkFontColor);
+    z-index: 50;
+    margin-top: 4px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    justify-content: space-between;
+    font-size: 12px;
+    cursor: pointer;
+    transition: border-color 0.2s ease-in-out;
+  }
+
+  .language-picker .language-picker-toggle .arrowlanCollapse{
+    transform: rotate(0deg);
+    transition: 0.4s ease;
+    margin-left: 4px;
+  }
+
+  .language-picker.open .language-picker-toggle .arrowlanCollapse{
+    transform: rotate(180deg);
+  }
+
+  .language-picker .language-picker-toggle .langSelected{
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  
+  .language-picker.open .language-picker-toggle {
+    border-color: #aaa;
+  }
+  
+  .language-picker-list {
+    position: absolute;
+    top: 100%;
+    border-radius: 10px;
+    background-color:  var(--fillInput);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: transparent;
+    border-top: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    font-size: 12px;
+    margin: 0;
+    color: var(--darkFontColor);
+    display: none;
+  }
+  
+  .language-picker.open .language-picker-list {
+    display: block;
+  }
+
+  .language-picker-list button{
+    display: flex;
+  }
+
+  .language-picker-list button img{
+    margin-right: 10px;
+  }
+  
+  .language-picker-item {
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
+    color: var(--darkFontColor);
+    text-align: left;
+    border: none;
+    margin-bottom: 3px;
+    background-color: transparent;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .language-picker-item:hover, .language-picker-item.selected {
+    background-color: var(--hoverColor);
+  }
+  

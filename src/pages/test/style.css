@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(234, 234, 234);
+    font-size: 15px;
+    font-family: Poppins;
+}
+
+*, *::after, *::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.div1{
+    height: 100vh;
+    background-color: blue;
+}
+
+.div2{
+    height: 100vh;
+    background-color: pink;
+}
+
+.div3{
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+.div2 .square1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+.div2 .square2{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}

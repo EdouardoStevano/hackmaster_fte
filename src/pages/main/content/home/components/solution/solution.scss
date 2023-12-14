@@ -1,0 +1,116 @@
+.scroll-section-outer {
+  overflow: hidden;
+}
+.texte-apprendere {
+  display: none;
+}
+.scroll-section-inner {
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.scroll-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  // margin-right: 200px;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--backgroundColor);
+  background-image: url('../../../../../../assets/branding/background/BackgroundCard_black.png');
+  background-repeat: repeat;
+  background-size: 55px;
+
+    .super-container-p80.viewHorizontal{
+      // background-color: green;
+      flex-direction: column;
+      color: var(--darkFontColor);
+    }
+}
+
+.scroll-section.section1{
+  .super-container-p80.section1{
+    flex-direction: column;
+    height: 80%;
+
+    .floatAnim{
+      position: relative;
+      left: 460px;
+      top: 50px;
+      animation: 3s float_Animation2 ease-in-out infinite;
+    }
+
+    .text{
+      // margin-top: 150px;
+      position: relative;
+      top: -110px;
+
+      small{
+        background-color: var(--darkColorTransparent);
+        font-size: 14px;
+        border-radius: 30px;
+        padding: 5px 20px;
+        
+      }
+
+      .title{
+          display: flex;
+          align-items: center;
+          
+
+          span{
+            margin: 0px 30px;
+            transform: rotate(-8deg);
+            background-color: rgb(252, 157, 69);
+            padding: 10px 20px;
+            border: 4px dotted rgb(255, 255, 255, 0.3);
+            box-shadow: 4px 6px 4px rgba(183, 111, 43, 0.4);
+            border-radius: 10px;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 24px;
+            font-size: 35px;
+          }
+
+          h1{
+            font-size: 60px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background: linear-gradient(295deg, rgba(121,58,180,1) 0%, rgb(252, 157, 69) 100%);
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  color: transparent; 
+        }
+      }
+    }
+
+    .bottom-image{
+      background-image: url('../../../../../../assets/branding/img/1920x1080/img6.jpg');
+      background-size: cover;
+      position: absolute;
+      bottom: -230px;
+      border-radius: 126px;
+      height: 500px;
+      width: 20%;
+      padding: 10px;
+
+      img{
+        position: relative;
+        left: 45%;
+        top: -50px;
+        animation: 4s turnAround linear infinite;
+      }
+    }
+  }
+  
+}
+
+
+.scroll-section h3 {
+  color: var(--darkFontColor);
+  font-weight: 500;
+}

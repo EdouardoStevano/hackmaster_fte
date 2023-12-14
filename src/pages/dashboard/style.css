@@ -1,0 +1,33 @@
+.dashboard-container {
+  background-color: var(--backgroundColor);
+  height: 100vh;
+  display: flex;
+}
+
+.dash-sidebar-container {
+  height: 100%;
+  width: 320px;
+}
+
+.page-content {
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  padding-right: 15px;
+}
+
+.dashboard-content {
+  height: 88%;
+  margin-top: 10px;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 770px) {
+  .dashboard-container {
+    flex-direction: column-reverse;
+  }
+  .dash-sidebar-container {
+    width: 100%;
+    height: 80px;
+  }
+}/*# sourceMappingURL=style.css.map */

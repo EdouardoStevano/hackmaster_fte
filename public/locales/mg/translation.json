@@ -1,0 +1,22 @@
+{
+    "navbar": {
+      "home": "Fandraisana",
+      "about": "Momba",
+      "solution": "toro-hevitra",
+      "school": "Sekoly",
+      "contact": "Hiantso",
+      "signIn": "Hiditra",
+      "signUp": "Hisoratra anarana",
+      "mode": "Maizina"
+    },
+
+    "banner": {
+      "lTitle": "Trandraho ny fahaizanao amin'ny alalan'ny fampianarana omenay",
+      "bTitle1": "Mamirata",
+      "bTitle2": "toy ny kintana",
+      "bTitle3": "hazavao ny",
+      "bTitle4": "lalanao",
+      "sTitle": "Découvrez l'avenir de l'éducation avec SIRIUS, où le savoir rencontre l'innovation. Développer vos compétences, tout en repoussant les limites de votre potentiel."
+    }
+  }
+  

@@ -1,0 +1,20 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "solution": "Solutions",
+    "school": "School",
+    "contact": "Contact",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "mode": "Dark mode"
+  },
+
+  "banner": {
+    "lTitle": "Unlock your potential with our online courses",
+    "bTitle1": "Be brighter",
+    "bTitle2": "than the stars",
+    "bTitle3": "light your own",
+    "bTitle4": "way"
+  }
+}

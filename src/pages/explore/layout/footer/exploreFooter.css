@@ -1,0 +1,19 @@
+.explore-footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+}
+.explore-footer .w-p95 {
+  display: flex;
+  justify-content: space-between;
+}
+.explore-footer .w-p95 .left.flex p {
+  font-size: 12px;
+}
+.explore-footer .w-p95 .right .footer-shorcut {
+  color: var(--darkFontColor);
+  margin-left: 10px;
+  font-size: 13px;
+}/*# sourceMappingURL=exploreFooter.css.map */

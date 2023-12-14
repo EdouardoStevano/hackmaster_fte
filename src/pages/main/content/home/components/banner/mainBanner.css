@@ -1,0 +1,122 @@
+.banner {
+  background-image: url("../../../../../../assets/branding/img/banner_bg.png");
+  background-size: cover;
+}
+.banner .super-container-p80 {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  padding-top: 30px;
+  height: 110vh;
+}
+.banner .super-container-p80 .w-p80 {
+  margin-top: -70px;
+}
+.banner .super-container-p80 .w-p80 h1 {
+  color: var(--darkFontColor);
+  font-size: 60px;
+  text-align: center;
+}
+
+.banner .title-content .line1, .banner .title-content .end-line, .banner .title-content .line2, .banner .title-content .line1-prime {
+  font-size: 25px;
+  line-height: 70px;
+  text-align: left;
+  color: var(--darkFontColor);
+  display: flex;
+}
+.banner .title-content .line1 .border-radius-px100, .banner .title-content .end-line .border-radius-px100, .banner .title-content .line2 .border-radius-px100, .banner .title-content .line1-prime .border-radius-px100 {
+  margin-left: 20px;
+  background-image: url("../../../../../../assets/branding/background/multiColor_Background.jpg");
+  background-size: cover;
+  font-size: 12px;
+  height: 50px;
+  width: 160px;
+}
+.banner .title-content .line1 .border-radius-px100 img, .banner .title-content .end-line .border-radius-px100 img, .banner .title-content .line2 .border-radius-px100 img, .banner .title-content .line1-prime .border-radius-px100 img {
+  position: relative;
+  top: -18px;
+  left: 15px;
+}
+.banner .title-content .line1 h1, .banner .title-content .end-line h1, .banner .title-content .line2 h1, .banner .title-content .line1-prime h1 {
+  font-weight: 800;
+  font-family: "Epilogue", sans-serif;
+}
+.banner .title-content .line1-prime {
+  display: flex;
+  align-items: center;
+}
+.banner .title-content .line1-prime span {
+  margin-left: 20px;
+  background-image: url("../../../../../../assets/branding/background/multiColor_Background.jpg");
+  background-size: cover;
+  font-size: 12px;
+  height: 50px;
+  width: 160px;
+}
+.banner .title-content .line1-prime span img {
+  position: relative;
+  top: -18px;
+  left: 15px;
+}
+.banner .title-content .line2 span {
+  background: linear-gradient(295deg, rgb(121, 58, 180) 0%, rgb(69, 109, 252) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 800;
+  font-family: "Epilogue", sans-serif;
+  color: transparent;
+}
+.banner .title-content .line2 .floatBox {
+  margin-left: 20px;
+  background-image: url("../../../../../../assets/branding/background/multiColor_Background.jpg");
+  background-size: cover;
+  font-size: 12px;
+  height: 50px;
+  width: 160px;
+}
+.banner .title-content .line2 .floatBox img {
+  position: relative;
+  top: -18px;
+  left: 15px;
+}
+.banner .title-content .end-line img {
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.banner .title-content p {
+  font-weight: 300;
+  opacity: 0.8;
+  color: var(--darkFontColor);
+}
+.banner .title-content .form-banner {
+  background-color: var(--fillInput);
+  margin-top: 30px;
+  width: 90%;
+  border-radius: 26px;
+}
+.banner .title-content .form-banner button {
+  margin: 5px;
+  background-color: var(--primaryColor);
+  padding: 7px;
+  color: #fff;
+  border-radius: 15px;
+}
+.banner .title-content .form-banner input {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: var(--darkFontColor);
+}
+.banner .title-content .fade-component {
+  opacity: 0;
+}
+
+.side-50.spline {
+  display: flex;
+  justify-content: flex-end;
+}
+.side-50.spline img {
+  opacity: 0;
+}/*# sourceMappingURL=mainBanner.css.map */

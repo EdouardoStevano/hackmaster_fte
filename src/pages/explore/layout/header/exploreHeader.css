@@ -1,0 +1,131 @@
+.explore-header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 5;
+}
+.explore-header .w-p95 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.explore-header .left-head {
+  display: flex;
+  align-items: center;
+}
+.explore-header .left-head .logo {
+  z-index: 5;
+  width: 200px;
+  display: flex;
+  text-align: center;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+}
+.explore-header .left-head .logo svg {
+  padding: 5px;
+  fill: #fff;
+  border-radius: 7px;
+  background-color: var(--primaryColor);
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+}
+.explore-header .left-head .logo span {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--darkFontColor);
+}
+.explore-header .left-head .search-bar {
+  background-color: var(--whiteColorTransparent);
+  border-radius: 40px;
+  display: flex;
+  border: solid 1px rgba(245, 247, 250, 0.06);
+  box-shadow: 8px 8px 24px 0 rgba(9, 13, 20, 0.4), -4px -4px 8px 0 rgba(224, 224, 255, 0.04), 0 1px 1px 0 rgba(9, 13, 20, 0.4);
+  background-image: linear-gradient(101deg, rgba(245, 247, 250, 0.05), rgba(245, 247, 250, 0.06) 52%, rgba(245, 247, 250, 0));
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  align-items: center;
+}
+.explore-header .left-head .search-bar svg {
+  padding: 5px;
+  stroke: var(--darkFontColor);
+  border-radius: 7px;
+  width: 30px;
+  height: 30px;
+  margin: 0px 8px;
+}
+.explore-header .left-head .search-bar input {
+  color: var(--darkFontColor);
+  padding: 10px;
+  border: none;
+  background: transparent;
+}
+.explore-header .left-head .search-bar button {
+  padding: 10px 30px;
+  border-radius: 40px;
+  cursor: pointer;
+  color: #fff;
+  background-image: var(--linearColor1);
+}
+.explore-header .left-head .search-bar button:hover {
+  background-color: var(--primaryColor);
+}
+.explore-header .right-header {
+  display: flex;
+  align-items: center;
+}
+.explore-header .right-header .shorcut .shorcut-link {
+  padding: 6px 0px;
+  color: var(--darkFontColor);
+  font-size: 13px;
+  margin: 10px;
+  transition: 0.4s ease-in-out;
+  border-bottom: 1px solid rgba(224, 224, 255, 0);
+}
+.explore-header .right-header .shorcut .shorcut-link:hover {
+  border-bottom: 1px solid rgba(224, 224, 255, 0.4);
+}
+.explore-header .right-header .icons {
+  margin-left: 20px;
+}
+.explore-header .right-header .icons svg {
+  padding: 4px;
+  width: 35px;
+  height: 35px;
+  stroke: var(--darkFontColor);
+  margin: 0px 5px;
+  border: solid 2px rgba(245, 247, 250, 0.06);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.explore-header .right-header .icons svg:hover {
+  background-color: var(--primaryColor);
+  border: solid 2px rgba(245, 247, 250, 0);
+}
+.explore-header .right-header .account {
+  display: flex;
+  align-items: center;
+}
+.explore-header .right-header .account .avatar {
+  margin: 0px 15px 0px 10px;
+  background-color: var(--primaryColor);
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  font-size: 7px;
+}
+.explore-header .right-header .account .info {
+  display: flex;
+  flex-direction: column;
+}
+.explore-header .right-header .account .info p {
+  margin-top: 10px;
+}
+.explore-header .right-header .account .info small:first-child {
+  opacity: 1;
+  font-size: 14px;
+  color: var(--darkFontColor);
+}/*# sourceMappingURL=exploreHeader.css.map */

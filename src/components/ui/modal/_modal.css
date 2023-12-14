@@ -1,0 +1,159 @@
+/* Style du modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Arrière-plan semi-transparent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  body.modal, body.modal.Large{
+    overflow: hidden
+  }
+
+  .Tutoriel_Container{
+    width: 100%;
+    background-image: ur;
+    /* background-color: var(--BackgroundColor); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 60vh;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.09);
+  }
+
+  .modal {
+    background-color: var(--fillInput);
+    padding: 20px 40px;
+    width: 40%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: 1s showModal;
+    transition: .3s ease;
+    color: var(--DarkFontColor);
+  }
+
+  .modal.large {
+    background-color: var(--fillInput);
+    padding: 20px 40px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: 1s showModal;
+    transition: .3s ease;
+  }
+
+  .modal.large img{
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  @keyframes showModal {
+    0%{
+        opacity: 0;
+        /* transform: scale(0); */
+    }100%{
+        opacity: 1;
+        /* transform: scale(1); */
+    }
+}
+
+.modal h2{
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--darkColorTransparent);
+}
+
+.modal .input_section{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .form_modal{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .form_modal .submit-section{
+  margin-top: 20px;
+}
+
+.modal .form_modal .input_section input{
+  padding: 12px;
+  margin-top: 10px;
+  color: var(--DarkFontColor);
+  border-radius:7px;
+  border: none;
+  border: 2px solid rgba(0, 0, 0, 0.09);
+  background-color: var(--BackgroundColor);
+}
+  
+  .modal-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    animation: 2s showCloseModal;
+    transition: .3s ease;
+  }
+  
+  .modal-content {
+    margin-top: 20px;
+  }
+
+  @keyframes showCloseModal {
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+  }
+  /* Style du flou sur le fond */
+  .modal-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px); /* Ajoute le flou */
+  }
+
+  @media screen and (max-width: 800px){
+    .modal{
+      width: 90%;
+  }  
+
+  .modal.Large{
+      width: 90%;
+  }  
+  }
+
+  @media screen and (max-width: 450px){
+    .modal{
+        width: 90%;
+    }  
+
+    .modal.Large{
+        width: 90%;
+    }  
+}
+
+  

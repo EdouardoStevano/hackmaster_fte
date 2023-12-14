@@ -1,0 +1,43 @@
+.super-global-container.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("../../../../../../assets/branding/img/bg_blur_dark_large.png");
+  background-color: var(--backgroundColor);
+  color: var(--darFontColor);
+}
+.super-global-container.contact .side-50 {
+  color: var(--darkFontColor);
+}
+.super-global-container.contact .side-50 p {
+  margin-top: 10px;
+}
+.super-global-container.contact .top {
+  display: flex;
+  justify-content: space-between;
+}
+.super-global-container.contact .top .contact-input {
+  background-color: var(--fillInput);
+  border-radius: 30px;
+  border: none;
+  width: 32%;
+  padding: 13px 30px;
+  color: var(--darkFontColor);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+.super-global-container.contact .bottom textarea {
+  background-color: var(--fillInput);
+  border-radius: 30px;
+  border: none;
+  margin-top: 15px;
+  height: 250px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  max-height: 250px;
+  min-height: 250px;
+  padding: 30px;
+  color: var(--darkFontColor);
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}/*# sourceMappingURL=contact.css.map */

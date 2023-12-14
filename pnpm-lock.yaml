@@ -101,6 +101,9 @@ dependencies:
   three:
     specifier: ^0.159.0
     version: 0.159.0
+  wave-visualizer:
+    specifier: ^1.0.6
+    version: 1.0.6
 
 devDependencies:
   '@types/react':
@@ -3350,6 +3353,10 @@ packages:
   /void-elements@3.1.0:
     resolution: {integrity: sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /wave-visualizer@1.0.6:
+    resolution: {integrity: sha512-2vTpXAc60qE7UNY0k0i7ty7sbZXLkOXivxNN7RRz1+G9STzPCfoKrda8rFM5f/vRw6JmXu8qV5CTfAAQrnlmHg==}
     dev: false
 
   /webgl-constants@1.1.1:

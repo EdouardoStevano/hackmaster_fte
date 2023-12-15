@@ -169,6 +169,12 @@
           transform: translate(-50%, -50%);
           border-radius: 10px;
           padding: 10px;
+
+          .close {
+            position: absolute;
+            right: 0px;
+            top: 0;
+          }
         }
         svg {
           padding: 4px;
@@ -191,6 +197,7 @@
     .account {
       display: flex;
       align-items: center;
+      position: relative;
 
       .avatar {
         margin: 0px 15px 0px 10px;
@@ -212,6 +219,29 @@
           opacity: 1;
           font-size: 14px;
           color: var(--darkFontColor);
+        }
+      }
+
+      .drop-downAvatar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+
+        top: 50px;
+        right: 0px;
+        width: 200px;
+        height: auto;
+        background-color: var(--fillInput);
+        border-radius: 10px;
+        padding: 10px;
+
+        p {
+          padding: 10px;
+          border-radius: 10px;
+          &:hover {
+            background-color: var(--primaryColor);
+            color: var(--darkFontColor);
+          }
         }
       }
     }

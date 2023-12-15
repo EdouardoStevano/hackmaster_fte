@@ -24,7 +24,7 @@ const DrawCat = ({ parentRef }) => {
         (document.documentElement.scrollTop - container.offsetTop) /
         container.offsetHeight;
 
-      let drawlength = lengthPath * scrollPercentage * 1.2;
+      let drawlength = lengthPath * scrollPercentage;
       path.style.strokeDashoffset = lengthPath - drawlength;
 
       if (scrollPercentage >= 0.99) {

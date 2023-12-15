@@ -7,12 +7,20 @@ import SpeechTotexte from "../../../../components/speechtotexte/SpeechTotexte";
 function ExploreHeader() {
   const [viewNotification, setViewNotification] = useState(false);
   const [viewAssistant, setViewAssistant] = useState(false);
+  const [viewProfile, setViewProfile] = useState(true);
 
   const handleclickViewNotification = () => {
     setViewNotification(!viewNotification);
   };
   const handleclickAssistantVocale = () => {
     setViewAssistant(!viewAssistant);
+  };
+  const handleClose = () => {
+    setViewAssistant(false);
+  };
+
+  const handleClickAvatar = () => {
+    setViewProfile(!viewProfile);
   };
   return (
     <div className="explore-header flex-space-between">
@@ -118,19 +126,49 @@ function ExploreHeader() {
 
               {viewAssistant && (
                 <div className="voice-assistant">
-                  <SpeechTotexte />{" "}
+                  <SpeechTotexte />
+                  <div className="close" onClick={handleClose}>
+                    <svg
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="24" height="24" fill="white" />
+                      <path
+                        d="M7 17L16.8995 7.10051"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7 7.00001L16.8995 16.8995"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
                 </div>
               )}
             </div>
           </div>
 
-          <div className="account">
+          <div className="account" onClick={handleClickAvatar}>
             <div className="avatar">Avatar</div>
             <div className="info">
               <small>MyName</small>
               <small>Citoyen simple</small>
             </div>
             <img src="" alt="" />
+
+            {viewProfile && (
+              <div className="drop-downAvatar">
+                <p>Parametre</p>
+                <p>Deconnection</p>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -12,12 +12,13 @@ import Solution from "./components/solution/Solution";
 import ListProblem from "./components/listProblem/ListProblem";
 import Contact from "./components/contact/contact";
 import Background3d from "@components/ui/background/background3D";
-
+import ChatbotComponent from "../../../../components/assistance/ChatbotComponent";
 
 function MainHome() {
   return (
     <div className="super-global-container home">
       <MainBanner />
+      <ChatbotComponent />
       <Band />
       <MainPresentaion />
       <MainCta />

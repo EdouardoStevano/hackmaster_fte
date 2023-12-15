@@ -51,6 +51,12 @@ const SpeechTotexte = () => {
               "Notre plateforme s'engage à simplifier votre exploration urbaine en vous offrant une assistance inégalée. Grâce à notre technologie innovante, vous pouvez naviguer dans la ville avec facilité, découvrant chaque coin et recoin sans tracas. Parcourez la ville en toute confiance, guidé par notre engagement envers votre expérience sans souci"
             );
           }
+        } else if (speechResult.toLowerCase().includes("carte.")) {
+          isrecording(false);
+          stopRecording();
+          speak(
+            "vous voulez voir la carte ok je vais vous rediriger vers la carte"
+          );
         } else {
           setResult(" " + result + " " + speechResult);
         }
@@ -74,7 +80,7 @@ const SpeechTotexte = () => {
           // alert("Listening Stopped.");
         } else {
           // alert("Error occurred in recognition: " + event.error);
-          speak("salut mahery il ya une erreur " + event.error);
+          speak("salut  il ya une erreur " + event.error);
           isrecording(false);
         }
       };

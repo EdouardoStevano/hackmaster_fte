@@ -9,6 +9,11 @@
     align-items: center;
     justify-content: center;
     position: relative;
+
+    &:hover {
+      background-color: var(--primaryColor);
+      color: var(--darkFontColor);
+    }
     .container-svg-btn {
       position: relative;
     }

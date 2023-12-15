@@ -16,7 +16,7 @@ function Explore() {
         <LeftMenu />
         <Didacticiel />
         <ExploreFooter />
-        {/* <Weather /> */}
+        <Weather />
         <Outlet />
     </div>
   )

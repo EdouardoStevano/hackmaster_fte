@@ -17,6 +17,7 @@ import SliderScroll from "@components/ui/sliderScroll/ScrollSlider";
 import BlueBack from "../../components/background/blurBackground";
 import CallToAction from "./components/CallToAction/CallToAction";
 
+
 function MainHome() {
   return (
     <div className="super-global-container home">

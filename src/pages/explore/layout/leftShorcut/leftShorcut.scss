@@ -9,7 +9,7 @@
     position: fixed;
     left: 0px;
     top: 50%;
-    z-index: 20;
+    z-index: 10;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -31,10 +31,10 @@
     color: #fff;
     height: 100vh;
     font-size: 14px;
-    background-image: url('../../../../Assets/image/illustration/backParticule.png');
     background-size: cover;
     box-shadow: 8px 8px 24px 0 rgba(9,13,20,0.4),-4px -4px 8px 0 rgba(224,224,255,0.04),0 1px 1px 0 rgba(9,13,20,0.4);
-    background-image: linear-gradient(101deg,rgba(255,255,255,0.02),rgba(255,255,255,.02) 52%,rgba(255,255,255,0.01));
+    // background-image: linear-gradient(101deg,rgba(0,0,0,0.02),rgba(255,255,255,.02) 52%,rgba(255,255,255,0.01));
+    background-color: var(--darkColorTransparent);
     backdrop-filter: blur(5px);
     padding: 20px;
     left: -1600px;
@@ -49,7 +49,7 @@
   }
 
   .speedLink-menu .close-speedLink{
-    fill: var(--primaryColor);
+    stroke: var(--darkFontColor);
     width: 40px;
     height: 40px;
     position: absolute;
@@ -68,8 +68,86 @@
   .speedLink-content {
     display: flex;
     overflow-y: auto;
-    height: 100vh;
+    height: 95vh;
+    margin: 0px 30px;
+    flex-direction: column;
     justify-content: space-around;
+
+    .globalMap{
+      width: 100%;
+      margin-top: 90px;
+      height: 500px;
+      background-image: url('../../../../assets/branding/img/pexels-catarina-sousa-68704.jpg');
+      background-size: cover;
+      border-radius: 20px;
+
+      .globalMap-content{
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        padding: 20px 40px;
+        display: flex;
+        border-radius: 20px;
+        flex-direction: column;
+
+        h1{
+          font-size: 40px;
+          color: #fff;
+          margin: 0px 20px;
+        }
+
+        .btn-explore{
+          margin-top: 20px;
+          border-radius: 30px;
+          background-image: var(--linearColor1);
+          padding: 10px;
+          cursor: pointer;
+          width: 140px;
+          color: #fff;
+          text-align: center;
+          transition: 0.3s ease-in-out;
+
+           &:hover{
+            width: 200px;
+           }
+        }     
+      }
+    }
+
+    .location-container{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      gap: 10px;
+
+      .category {
+        padding: 8px 12px;
+        border-radius: 20px;
+        background-color: var(--darkColorTransparent);
+        font-size: 14px;
+        color: var(--darkFontColor);
+        transition: 0.3s ease-in-out;
+        border: 1px solid transparent;
+        cursor: pointer;
+        font-weight: 500;
+
+        &:hover{
+          background-color: transparent;
+          border: 1px solid var(--darkFontColor);
+          color: var(--darkFontColor);
+        }
+      }
+    }
+
+    h1{
+      color: var(--darkFontColor);
+      margin-left: 10px;
+      margin-top: 20px;
+    }
+
+    small{
+      color: var(--darkFontColor);
+      margin-left: 10px;
+    }
   }
 
   .speedLink-content h2{

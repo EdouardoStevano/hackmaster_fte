@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import './weather.scss'
 
+
 const formatDate = (date) => {
     const day = date.getDate().toString().padStart(2, '0');
     const monthNames = [
@@ -10,10 +11,16 @@ const formatDate = (date) => {
       'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
     ];
     const monthIndex = date.getMonth();
-    const year = date.getFullYear().toString().slice(-2);
+    const year = date.getFullYear().toString();
   
     return `${day} ${monthNames[monthIndex]} ${year}`;
   };
+
+
+  import wind from '@assets/icon/png/météo/wind.png'
+import humidityIcon from '@assets/icon/png/météo/humidity.png'
+import sunsetIcon from '@assets/icon/png/météo/sunset.png';
+import sunriseIcon from '@assets/icon/png/météo/sunrise.png';
 
 function Weather() {
 
@@ -56,40 +63,49 @@ function Weather() {
     const sunrise = weatherData.sys.sunrise;
     const sunset = weatherData.sys.sunset;
 
+    const today = new Date();
+    const formattedDate = formatDate(today);
+
     const weatherIconUrl = `http://openweathermap.org/img/w/${weatherIconCode}.png`;
 
   return (
     <div className='weather-container'>
       <h1>Méteo</h1>
       <div className="info">
-        <p className="weather-day">Aujourd'hui</p>
-        <p className="weather-date">{formattedDate}</p>
+        <p className="weather-day">Aujourd'hui, {formattedDate}</p>
         <p className="weather-location">
             {cityName}, {sys.country}
         </p>
       </div>
+      <div className="weather-content">
       <div className="weather-temperature">
         <img src={weatherIconUrl} alt="Weather Icon" />
-        <strong className="temperature-value"> {temperature}ºC</strong> <br/>
-        <p className="temperature-description">{weatherDescription}</p>
+        <small>Temperature :</small>
+        <strong className="temperature-value"> {temperature}ºC, {weatherDescription}</strong> <br/>
       </div>
       <div className="weather-temperature">
-        <img src={weatherIconUrl} alt="Weather Icon" />
-        <strong className="temperature-value">Humidité : {humidity} %</strong> <br/>
+        <img src={humidityIcon} alt="Weather Icon" />
+        <small>Humidité :</small>
+        <strong className="temperature-value">{humidity} %</strong> <br/>
       </div>
       <div className="weather-temperature">
-        <img src={weatherIconUrl} alt="Weather Icon" />
-        <strong className="temperature-value">Vitesse du vent : {speed} m/s</strong> <br/>
-      </div>
-
-      <div className="weather-temperature">
-        <img src={weatherIconUrl} alt="Weather Icon" />
-        <strong className="temperature-value">Lever du soleil : {new Date(sunrise * 1000).toLocaleTimeString()}</strong> <br/>
+        <img src={wind} alt="Weather Icon" />
+        <small>Vitesse de vent :</small>
+        <strong className="temperature-value">{speed} m/s</strong> <br/>
       </div>
 
       <div className="weather-temperature">
-        <img src={weatherIconUrl} alt="Weather Icon" />
-        <strong className="temperature-value">Coucher du soleil: {new Date(sunset * 1000).toLocaleTimeString()}</strong> <br/>
+        <img src={sunriseIcon} alt="Weather Icon" />
+        <small>Lever du soleil : :</small>
+        <strong className="temperature-value"> {new Date(sunrise * 1000).toLocaleTimeString()}</strong> <br/>
+      </div>
+
+      <div className="weather-temperature">
+        <img src={sunsetIcon} alt="Weather Icon" />
+        <small>Coucher du soleil: </small>
+        <strong className="temperature-value">{new Date(sunset * 1000).toLocaleTimeString()}</strong><br/>
+      </div>
+              
       </div>
     </div>
   )

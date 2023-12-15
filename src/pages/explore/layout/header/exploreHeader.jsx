@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import "./exploreHeader.scss";
 import { useState } from "react";
 import SpeechTotexte from "../../../../components/speechtotexte/SpeechTotexte";
-import LogoIcon from '/supericon.png' 
+import LogoIcon from "/supericon.png";
+import CardNotification from "./content/card/CardNotification";
 
 function ExploreHeader() {
   const [viewNotification, setViewNotification] = useState(false);
@@ -23,12 +24,42 @@ function ExploreHeader() {
   const handleClickAvatar = () => {
     setViewProfile(!viewProfile);
   };
+
+  const [dataNotification, setDataNotification] = useState([
+    {
+      titre: "Meteo",
+      description: "Temps Fort",
+      contenu: "faite attention veuillez rentrez chez vous",
+    },
+    {
+      titre: "Election",
+      description: "Temps Fort",
+      contenu: "faite attention veuillez rentrez chez vous",
+    },
+    {
+      titre: "Boutique ouvert",
+      description: "Temps Fort",
+      contenu: "faite attention veuillez rentrez chez vous",
+    },
+  ]);
+
+  const handlecloseNotif = (index) => {
+    console.log(index);
+    const datacopy = [...dataNotification];
+
+    const dataCopyFIltrer = datacopy.filter(
+      (data) => index !== datacopy.indexOf(data)
+    );
+
+    console.log(dataCopyFIltrer);
+    setDataNotification(dataCopyFIltrer);
+  };
   return (
     <div className="explore-header flex-space-between">
       <div className="w-p95 pad-top-px20 pad-bottom-px20">
         <div className="left-head">
           <div className="logo">
-            <img src={LogoIcon} alt="logo" className='marge-right-px10'/>
+            <img src={LogoIcon} alt="logo" className="marge-right-px10" />
             <span>RealIT.</span>
           </div>
 
@@ -62,6 +93,7 @@ function ExploreHeader() {
 
           <div className="icons">
             <div className="svg-container-explore">
+              <div className="rounded"></div>
               <svg
                 onClick={handleclickViewNotification}
                 xmlns="http://www.w3.org/2000/svg"
@@ -86,14 +118,19 @@ function ExploreHeader() {
               </svg>
               {viewNotification && (
                 <div className="notification-container">
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Facere, vel illo rem delectus repudiandae laboriosam! Sunt
-                    quo vitae commodi iusto veniam, optio omnis et ut minus
-                    alias, fugiat magnam corrupti hic facilis ab mollitia error
-                    facere, eum ipsam? Asperiores maiores laudantium, temporibus
-                    magni eveniet vel rem? Ut eos fugit quo?
-                  </p>
+                  <div>
+                    {dataNotification.map((notif, index) => (
+                      <div key={index}>
+                        <CardNotification
+                          handleClose={handlecloseNotif}
+                          index={index}
+                          title={notif.titre}
+                          description={notif.description}
+                          content={notif.contenu}
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>

@@ -1,0 +1,43 @@
+.content-demmmande {
+  width: 500px;
+  background-color: var(--fillInput);
+  border-radius: 30px;
+  height: 600px;
+  padding: 40px;
+  color: var(--darkFontColor);
+
+  h3 {
+    text-align: center;
+  }
+  .header-demmande {
+    width: 80%;
+    margin: 30px auto 30px;
+    p {
+      text-align: center;
+    }
+  }
+
+  .body-demmande {
+    margin: 20px 0px;
+  }
+
+  .footer-demmande {
+    margin-top: 100px;
+
+    .signature-bloc {
+      float: right;
+      p {
+        text-align: end;
+      }
+      .signature-container {
+        width: 140px;
+        height: 100px;
+        padding: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

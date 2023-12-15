@@ -7,7 +7,7 @@ import SpeechTotexte from "../../../../components/speechtotexte/SpeechTotexte";
 function ExploreHeader() {
   const [viewNotification, setViewNotification] = useState(false);
   const [viewAssistant, setViewAssistant] = useState(false);
-  const [viewProfile, setViewProfile] = useState(true);
+  const [viewProfile, setViewProfile] = useState(false);
 
   const handleclickViewNotification = () => {
     setViewNotification(!viewNotification);

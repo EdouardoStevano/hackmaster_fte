@@ -83,6 +83,9 @@ dependencies:
   react-router-dom:
     specifier: ^6.20.1
     version: 6.20.1(react-dom@18.2.0)(react@18.2.0)
+  react-signature-canvas:
+    specifier: ^1.0.6
+    version: 1.0.6(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
   react-spline:
     specifier: ^1.2.1
     version: 1.2.1(react@18.2.0)
@@ -101,6 +104,9 @@ dependencies:
   three:
     specifier: ^0.159.0
     version: 0.159.0
+  wave-visualizer:
+    specifier: ^1.0.6
+    version: 1.0.6
 
 devDependencies:
   '@types/react':
@@ -2773,6 +2779,20 @@ packages:
       react: 18.2.0
     dev: false
 
+  /react-signature-canvas@1.0.6(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-NoMHomYu9HxFeLjUGbIeV9abPdWSROfFxFNDekGdwmmaIx+w5ziOEiU2C34X0Ao4GxFnwqyUy/BpYlA4lCD1CA==}
+    peerDependencies:
+      prop-types: ^15.5.8
+      react: 0.14 - 18
+      react-dom: 0.14 - 18
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      signature_pad: 2.3.2
+      trim-canvas: 0.1.2
+    dev: false
+
   /react-spline@1.2.1(react@18.2.0):
     resolution: {integrity: sha512-d17gOvoKjWfHmsXm7H1YbK715dDEVuIc72eNcrrpNp7T/H8zH2yfNvk1NSJQSuGchTXaa90hbiGRC3FGpJHMZA==}
     engines: {node: '>=10'}
@@ -2999,6 +3019,10 @@ packages:
       object-inspect: 1.13.1
     dev: true
 
+  /signature_pad@2.3.2:
+    resolution: {integrity: sha512-peYXLxOsIY6MES2TrRLDiNg2T++8gGbpP2yaC+6Ohtxr+a2dzoaqWosWDY9sWqTAAk6E/TyQO+LJw9zQwyu5kA==}
+    dev: false
+
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
@@ -3197,6 +3221,10 @@ packages:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: false
 
+  /trim-canvas@0.1.2:
+    resolution: {integrity: sha512-nd4Ga3iLFV94mdhW9JFMLpQbHUyCQuhFOD71PEAt1NjtMD5wbZctzhX8c3agHNybMR5zXD1XTGoIEWk995E6pQ==}
+    dev: false
+
   /troika-three-text@0.47.2(three@0.159.0):
     resolution: {integrity: sha512-qylT0F+U7xGs+/PEf3ujBdJMYWbn0Qci0kLqI5BJG2kW1wdg4T1XSxneypnF05DxFqJhEzuaOR9S2SjiyknMng==}
     peerDependencies:
@@ -3350,6 +3378,10 @@ packages:
   /void-elements@3.1.0:
     resolution: {integrity: sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /wave-visualizer@1.0.6:
+    resolution: {integrity: sha512-2vTpXAc60qE7UNY0k0i7ty7sbZXLkOXivxNN7RRz1+G9STzPCfoKrda8rFM5f/vRw6JmXu8qV5CTfAAQrnlmHg==}
     dev: false
 
   /webgl-constants@1.1.1:

@@ -35,7 +35,7 @@ function MainExplore() {
       <div className="cityExplore">
         {/* <h1>Test</h1> */}
 
-        <Spline scene="https://prod.spline.design/kmzDCfKfrGw8amdS/scene.splinecode" />
+        {/* <Spline scene="https://prod.spline.design/kmzDCfKfrGw8amdS/scene.splinecode" /> */}
       </div>
     </div>
   );

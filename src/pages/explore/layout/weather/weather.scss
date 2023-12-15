@@ -1,6 +1,44 @@
 .weather-container{
-    width: inherit;
+    width: 400px;
     position: absolute;
     top: 100px;
-    right: 50px;
+    right: 0;
+    animation: 1s s;
+
+    h1{
+        font-size: 60px;
+        background: linear-gradient(
+        295deg,
+        rgba(121, 58, 180, 1) 0%,
+        rgba(69, 109, 252, 1) 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      font-weight: 800;
+      color: transparent;
+    }
+
+    .info{
+        .weather-location{
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 20px;
+
+        }
+    }
+
+    .weather-content{
+        display: flex;
+        flex-wrap: wrap;
+        .weather-temperature{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            
+            img{
+                width: 50px;
+            }
+        }
+
+    }
 }

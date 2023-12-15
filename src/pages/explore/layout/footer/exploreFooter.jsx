@@ -10,7 +10,7 @@ function ExploreFooter() {
     <div className='explore-footer flex-space-between'>
         <div className="w-p95 pad-top-px20 pad-bottom-px20">
             <div className="left flex">
-              <p className='marge-right-px12'>Copyright &copy; Citadel. Devellopé par Team Sirius</p>
+              <p className='marge-right-px12'>Copyright &copy; RealIT. Devellopé par Team Supernova</p>
               <SwitchMode/>
             </div>
             

@@ -15,7 +15,7 @@
 
     /* Transparent Color */
     --whiteColorTransparent: rgba(255, 255, 255, 0.7);
-    --darkColorTransparent: rgba(0, 0, 0, 0.06);
+    --darkColorTransparent: rgba(0, 0, 0, 0.08);
     --scrollColor: rgba(0, 0, 0, 0.3);
 
     /* Font color */
@@ -45,8 +45,8 @@
     --color4: #06b91e;
 
     /* For blur background */
-    --blurcolor1: #f3aacb;
-    --blurcolor2: #7eb7e6;
+    --blurcolor1: #dcaffa;
+    --blurcolor2: #7bbff7;
     --blurcolor3: #99e29a;
 
     --logoIcon: url('../../branding/supernova/logo512.png');
@@ -58,7 +58,6 @@
     --DefaultFont: Poppins;
     --TitleFont: Poppins;
 }
-
 
 .darktheme {
     /* principal color */
@@ -108,8 +107,8 @@
     --color4: #06b91e;
 
     /* For blur background */
-    --blurcolor1: #f3aacb;
-    --blurcolor2: #7eb7e6;
+    --blurcolor1: #cb8df5;
+    --blurcolor2: #63adeb;
     --blurcolor3: #99e29a;
 
     --logoIcon: url('../../image/logo/EMIT_Logo_inlight.png');

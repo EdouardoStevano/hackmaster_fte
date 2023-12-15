@@ -95,7 +95,7 @@ function MainBanner() {
           </div>
           <p>Nous cherchons à rendre nos villes plus intelligentes, accessibles à tous. En utilisant des technologies novatrices, nous visons à améliorer la vie urbaine pour chacun, en créant des environnements durables et connectés.</p>
 
-          <div className="btn-group">
+          <div className="btn-group-banner">
             <a href="#presentation" className="read-more">en savoir plus</a>
             <Link to={"/explore"} className="begin">
               Commencer

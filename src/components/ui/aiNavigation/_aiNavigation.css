@@ -1,0 +1,199 @@
+  
+  .demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    margin: 0 10px 20px;
+  }
+
+  .aiNavigation_input{
+    color: var(--darkFontColor)
+  }
+
+  
+  @-webkit-keyframes redPath {
+    50% {
+      top: 20px;
+    }
+  }
+  
+  @keyframes redPath {
+    50% {
+      top: 20px;
+    }
+  }
+  @-webkit-keyframes bluePath {
+    50% {
+      bottom: 20px;
+      left: 20px;
+    }
+  }
+  @keyframes bluePath {
+    50% {
+      bottom: 20px;
+      left: 20px;
+    }
+  }
+  @-webkit-keyframes greenPath {
+    50% {
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+  @keyframes greenPath {
+    50% {
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+  @-webkit-keyframes rotateAll {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotateAll {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .blur-loader {
+    -webkit-animation: rotateAll 2000ms linear infinite;
+            animation: rotateAll 2000ms linear infinite;
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+
+  .errorPage{
+    font-size: 5px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    color: #fff;
+    margin-left: 10px;
+    background-color: var(--dangerColor);
+  }
+
+  .blur-loader__dot {
+    transform: rotate(0);
+    transform-origin: top center;
+    mix-blend-mode: screen;
+    border-radius: 50%;
+    opacity: 0.8;
+    display: block;
+    width: 70px;
+    height: 70px;
+    filter: blur(10px);
+    position: absolute;
+  }
+  .blur-loader__dot:nth-child(1) {
+    -webkit-animation: redPath 3000ms linear infinite;
+            animation: redPath 3000ms linear infinite;
+    background: rgb(255, 60, 0);
+    margin-left: -15px;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+  }
+  .blur-loader__dot:nth-child(2) {
+    -webkit-animation: bluePath 3000ms linear infinite;
+            animation: bluePath 3000ms linear infinite;
+    background: rgb(79, 110, 234);
+    bottom: 0;
+    left: 0;
+  }
+  .blur-loader__dot:nth-child(3) {
+    -webkit-animation: greenPath 3000ms linear infinite;
+            animation: greenPath 3000ms linear infinite;
+    background: rgb(57, 149, 7);
+    bottom: 0;
+    right: 0;
+  }
+
+    .aiNavigation {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 30%;
+        margin: 20px auto;
+        padding: 20px 20px 10px 20px;
+        z-index: 999;
+        border-radius: 15px;
+        text-align: left;
+        color: var(--darkFontColor);
+        background-color: var(--fillInput);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transition: opacity 0.3s ease;
+        animation: swipeUp 1s ease-in-out;
+      }
+
+      .aiNavigation .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .aiNavigation .content .activeMicro{
+        width: 30%;
+        padding: 5px;
+        background-color: var(--darkFontColor);
+        border-radius: 20px;
+        display: flex;
+        font-size: 12px;
+        align-items: center;
+        color: var(--fillInput);
+        cursor: pointer;
+
+      }
+
+      .aiNavigation .content .activeMicro img{
+        background-color: var(--fillInput);
+        width: 20px;
+        border-radius: 100px;
+        padding: 4px;
+        width: 20px;
+        height: 20px;
+      }
+
+      .aiNavigation .content .activeMicro span{
+        margin-left: 8px;
+        margin-top: 4px;
+      }
+
+      .aiNavigation .content input{
+        width: 68%;
+        padding: 5px;
+        border: 2px solid rgba(231, 231, 231, 0.172);
+        background-color: var(--backgroundColor);
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 12px;
+      }
+    
+      .aiNavigation h1{
+        font-size: 20px;
+        font-weight: bold;
+      }
+    
+      .aiNavigation p{
+        font-size: 13px;
+        text-align: justify;
+      }
+    
+      .close-button {
+        position: absolute;
+        top: 10px; 
+        right: 10px; 
+        cursor: pointer;
+        font-size: 16px;
+        color: #333; 
+      }
+      
+      .close-button:hover {
+        color: #f00;
+      }
+      

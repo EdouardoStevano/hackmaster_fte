@@ -7,11 +7,11 @@ function MainExplore() {
   return (
     <div className="middle-explore">
       <div className="exploreTitle">
-        <h1>Lorem Ipsum Dolorss onsecte adipi ons</h1>
-        <small>
+        <h1>Bienvenue sur Athènes </h1>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
           odit, vel minus libero quam voluptatibus ad{" "}
-        </small>
+        </p>
 
         <div className="guide-navigation">
           <div className="direction up">

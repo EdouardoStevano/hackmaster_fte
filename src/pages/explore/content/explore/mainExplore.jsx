@@ -7,19 +7,18 @@ function MainExplore() {
   return (
     <div className="middle-explore">
       <div className="exploreTitle">
-        <h1>Bienvenue sur Athènes </h1>
+        <h1>Bienvenue sur RealIT </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          odit, vel minus libero quam voluptatibus ad{" "}
+          Vous pouvez naviguer à travers notre RealCity et clique sur le destination que vous voulez. Ci dessous les commandes de navigation.{""}
         </p>
 
         <div className="guide-navigation">
           <div className="direction up">
-            Z <span>haut</span>
+            w <span>haut</span>
           </div>
           <div className="horizontal">
             <div className="direction left">
-              Q <span>Gauche</span>
+              A <span>Gauche</span>
             </div>
             <div className="direction right">
               D <span>Droite</span>

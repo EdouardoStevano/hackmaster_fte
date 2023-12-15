@@ -15,7 +15,6 @@ function ExploreFooter() {
             </div>
             
             <div className="right">
-              <Link className='footer-shorcut'>Services Municipales</Link>
               <Link className='footer-shorcut'>Carte de la ville</Link>
             </div>
         </div>

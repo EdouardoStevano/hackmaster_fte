@@ -1,0 +1,68 @@
+.perspective-bloc {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+
+  .Title {
+    width: 50%;
+    color: var(--darkFontColor);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    div {
+      position: relative;
+      left: 200px;
+      top: -20px;
+
+      h1 {
+        font-size: 50px;
+        color: transparent;
+        background-image: var(--linearColor1);
+        background-clip: text;
+      }
+      .p1 {
+        font-size: 32px;
+      }
+      button {
+        display: block;
+        width: auto;
+        padding: 15px 60px;
+        border: 3px solid var(--darkFontColor);
+        border-radius: 9999px;
+        background-image: linear-gradient(
+          to right,
+          transparent 50%,
+          rgb(189, 15, 163) 50%,
+          rgb(91, 31, 194)
+        );
+        background-size: 200%;
+        background: transparent;
+        color: var(--darkFontColor);
+        font-size: 24px;
+        font-weight: 200;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        margin: 20px 0px;
+        &:hover {
+          background-image: linear-gradient(
+            to right,
+            transparent 50%,
+            rgb(189, 15, 163) 50%,
+            rgb(91, 31, 194)
+          );
+          background-size: 200%;
+          color: #fff;
+          background-position: 100%;
+          border: 3px solid var(--primaryColor);
+        }
+      }
+    }
+  }
+  .containner {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

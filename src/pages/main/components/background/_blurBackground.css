@@ -1,0 +1,75 @@
+.blurBackground{
+    z-index: 1;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    animation: 4s fadeIn ease;
+}
+
+.blurBackground .blur{
+    filter: blur(100px);
+    
+}
+
+.blurBackground .Box1{
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+    top: -200px;
+    right: 100px;
+    position: absolute;
+    background-color: var(--blurcolor1);
+}
+.blurBackground .Box2{
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    top: 500px;
+    left: 10px;
+    opacity: 1;
+    position: absolute;
+    background-color: var(--blurcolor2);
+}
+.blurBackground .Box3{
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+    top: 400px;
+    left: 800px;
+    opacity: 1;
+    position: absolute;
+    background-color: var(--blurcolor3);
+}
+
+@media (max-width: 768px) {
+    .blurBackground .Box1{
+        z-index: 1;
+        width: 400px;
+        height: 400px;
+        top: -200px;
+        right: 100px;
+        position: absolute;
+        background-color: var(--blurcolor1);
+    }
+    .blurBackground .Box2{
+        z-index: 1;
+        width: 200px;
+        height: 200px;
+        top: 500px;
+        right: 0px;
+        opacity: 1;
+        position: absolute;
+        background-color: var(--blurcolor2);
+    }
+    .blurBackground .Box3{
+        z-index: 1;
+        width: 400px;
+        height: 400px;
+        top: 400px;
+        left: 100px;
+        opacity: 1;
+        position: absolute;
+        background-color: var(--blurcolor3);
+    }
+  }

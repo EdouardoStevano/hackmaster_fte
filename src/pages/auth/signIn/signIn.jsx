@@ -30,12 +30,18 @@ function SignIn() {
   const baseUrl = getBaseUrl()
 
   // const location = useLocation();
-  const redirectPath = localStorage.getItem('urlToAccess') ? localStorage.getItem('urlToAccess') : '/dashboard' 
+  const redirectPath = localStorage.getItem('urlToAccess') ? localStorage.getItem('urlToAccess') : '/explore' 
 
   const nav = navigate()
 
   effect(() => {
     const storedEmail = localStorage.getItem('email');
+    if(storedEmail != null){
+      setUserEmail(storedEmail);
+    }else{
+      setUserEmail('');
+    }
+    
   }, []);
 
   const handleRememberMeChange = (event) => {
@@ -96,7 +102,8 @@ function SignIn() {
       .catch((error) => {
         // Gérer les erreurs de requête
         if (error.response) {
-          toast.error('Une erreur de validation. Veuillez réessayer');
+          toast.error(error.response.data.message);
+          // console.log(error.response.data.message);
         }
       });
 };
@@ -167,12 +174,12 @@ function SignIn() {
 
         <div className="btn-signForm">
           <div className="remreber-check">
-            <input type="checkbox" name="remenber" id="remenber" />
+            <input type="checkbox" checked={localStorage.getItem("email") != null ? 'check' : ''} name="remenber" id="remenber" onChange={handleRememberMeChange}/>
             <label htmlFor="remenber" onChange={handleRememberMeChange}>Se souvenir de moi</label>
           </div>
 
           <div className="passForget">
-            <Link to="/password/reset" className='link-passForget'>Mot de passe oublié?</Link>
+            <Link to="/login/password/reset" className='link-passForget'>Mot de passe oublié?</Link>
           </div>
         </div>
 

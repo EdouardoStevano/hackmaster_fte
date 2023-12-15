@@ -9,6 +9,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 // Constant components
 import ConnectionStatus from "@components/ui/connexionStatus/connectionStatus";
+// import AiNavigation from '@components/ui/aiNavigation/aiNavigation'
 
 // Theme mode verification
 import { checkmode } from "@utils/helpers/mode/checkmode";
@@ -22,6 +23,9 @@ const __EXPLORE__ = lazy(() => import('@config/routes/explore'))
 // Redirect route importation
 const __LOADER__ = lazy(() => import('@pages/redirect/loader/loader'))
 const __REDIRECT__ = lazy(() => import('@config/routes/redirect'))
+
+// Test route importation 
+const __TESTS__ = lazy(() => import('@config/routes/tests'))
 
 // Initialize
 i18n
@@ -50,13 +54,17 @@ function RouteConfig() {
       />
 
       {/* Constant components */}
+      {/* {(localStorage.getItem('ainavigation')==="active") && <AiNavigation/>} */}
       <ConnectionStatus />
 
-        <__MAIN__ />
-        <__AUTH__ />
-        <__EXPLORE__ />
-        <__DASHBOARD__ />
-        <__REDIRECT__ />
+      <__MAIN__ />
+      <__AUTH__ />
+      <__EXPLORE__ />
+      <__DASHBOARD__ />
+      <__REDIRECT__ />
+
+      {/* Test routes */}
+      <__TESTS__ />
     </Suspense>
   )
 }

@@ -39,6 +39,23 @@
 		}
 
 	}
+
+	img{
+		position: absolute;
+		top: 47%;
+		height: 40px;
+		width: 40px;
+		fill: var(--primaryColor); 
+		border-radius: 100%;
+		// box-shadow: 0px 0px 40px var(--primaryColor);
+		animation: float_Animation1 ease-in-out 3s infinite;
+
+		&:hover{
+			box-shadow: 0px 0px 30px var(--primaryColor)
+			// animation: spin var(--spd) linear 0s infinite, rotation var(--spd) linear 0s infinite;
+		}
+
+	}
 }
 
 .loader {

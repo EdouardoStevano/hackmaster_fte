@@ -36,11 +36,11 @@
   
   .progress-ball {
     position: absolute;
-    bottom: -22px;
+    bottom: -29px;
     left: 0px;
     width: 10px;
     height: 10px;
-    background-color: #007bff;
+    background-color: var(--primaryColor);
     border-radius: 50%;
     display: flex;
     justify-content: center;

@@ -1,0 +1,8 @@
+.separator{
+    width: 2.3px;
+    height: 19px;
+    margin: 0px 9px 0px 16px;
+    background-color: var(--darkFontColor);
+    border-radius: 100px;
+    opacity: 0.5;
+}

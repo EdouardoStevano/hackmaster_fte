@@ -1,0 +1,56 @@
+.backFromMap{
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    background-color: var(--darkColorTransparent);
+    padding: 6px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    color: var(--darkFontColor);
+    transition: 0.4s ease;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--primaryColor);
+        color: #fff;
+        stroke: #fff;
+    }
+    
+    svg{
+        margin-right: 10px;
+        width: 20px;
+    }
+}
+
+.basemap-dropdown {
+    margin-bottom: 20px;
+
+    label{
+        color: var(--darkFontColor);
+    }
+  }
+  
+  /* Style pour le label du dropdown */
+  .basemap-dropdown label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Style pour le select */
+  .basemap-dropdown select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid var(--greyColor);
+    border-radius: 15px;
+    background-color: var(--fillInput);
+    color: var(--darkFontColor);
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Style pour les options du select */
+  .basemap-dropdown select option {
+    background-color: var(--fillInput);
+    color: var(--darkFontColor);
+  }

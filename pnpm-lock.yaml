@@ -53,6 +53,9 @@ dependencies:
   leaflet:
     specifier: ^1.9.4
     version: 1.9.4
+  leaflet-minimap:
+    specifier: ^3.6.1
+    version: 3.6.1
   moment:
     specifier: ^2.29.4
     version: 2.29.4
@@ -89,6 +92,9 @@ dependencies:
   react-signature-canvas:
     specifier: ^1.0.6
     version: 1.0.6(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
+  react-speech-recognition:
+    specifier: ^3.10.0
+    version: 3.10.0(react@18.2.0)
   react-spline:
     specifier: ^1.2.1
     version: 1.2.1(react@18.2.0)
@@ -2344,6 +2350,10 @@ packages:
       json-buffer: 3.0.1
     dev: true
 
+  /leaflet-minimap@3.6.1:
+    resolution: {integrity: sha512-6px8f6cfv1rKB6ACpL6bbUFGxipZOq4KsntJgBj9nOcW1RYa5+xFp8emOZwks9X+VtVVsQEwWwfgT1kTTL/LzA==}
+    dev: false
+
   /leaflet@1.9.4:
     resolution: {integrity: sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==}
     dev: false
@@ -2804,6 +2814,14 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
       signature_pad: 2.3.2
       trim-canvas: 0.1.2
+    dev: false
+
+  /react-speech-recognition@3.10.0(react@18.2.0):
+    resolution: {integrity: sha512-EVSr4Ik8l9urwdPiK2r0+ADrLyDDrjB0qBRdUWO+w2MfwEBrj6NuRmy1GD3x7BU/V6/hab0pl8Lupen0zwlJyw==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-spline@1.2.1(react@18.2.0):

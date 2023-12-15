@@ -127,7 +127,7 @@ function SpeedLink() {
               </div>
 
               <h1>Exploration :</h1>
-              <small>Choisissez le lieux que vou voulez explorer.</small>
+              <small>Choisissez le lieux que vous voulez explorer.</small>
 
               <div className="location-container">
                 <span class="category">TRANSPORT</span>
@@ -138,8 +138,6 @@ function SpeedLink() {
                 <span class="category">BOUTIQUE</span>
                 <span class="category">BÂTIMENT ADMINISTRATIF</span>
                 <span class="category">STATION ESSENCE</span>
-                <span class="category">ARRÊT TAXI</span>
-                <span class="category">ARRÊT BUS</span>
                 <span class="category">CIMETIÈRE</span>
                 <span class="category">BAR</span>
                 <span class="category">SECOURS</span>

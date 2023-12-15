@@ -11,7 +11,7 @@ import Overview from "../widget/Overview";
 import Fligth from "../customMessage/Fligth.jsx";
 import Options from "../option/Options";
 import Quiz from "../quiz/Quiz";
-const botName = "BrainBot";
+const botName = "Mity";
 
 const config = {
   initialMessages: [
@@ -68,7 +68,7 @@ const config = {
           flexDirection: "row",
         }}
       >
-        <p>BrainBot</p>
+        <p>Discuter avec Mity</p>
         <div
           onClick={() => {
             document

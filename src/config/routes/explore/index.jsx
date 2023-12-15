@@ -5,11 +5,13 @@ import { Route, Routes } from "react-router-dom";
 const __Explore = lazy(() => import('@pages/explore'))
 const __Home__Section = lazy(() => import('@pages/explore/content/explore/mainExplore'))
 const __Map__Section = lazy(() => import('@pages/explore/content/globaleMap/globaleMap'))
+const __VR__Section = lazy(() => import('@pages/explore/content/globaleMap/vrlocation'))
 
 function ExploreRoutes() {
   return (
       <Routes>
         <Route path="/maps" element={<__Map__Section />} />
+        <Route path="/visit/location/:index" element={<__VR__Section />} />
         <Route path="/explore" element={<__Explore />}>
             <Route index element={<__Home__Section />} />
             <Route path="home" element={<__Home__Section />} />

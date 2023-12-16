@@ -1,0 +1,159 @@
+.formPermis-bloc {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  position: relative;
+
+  .btn-retour {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    button {
+      outline: none;
+      border: none;
+      background-color: none;
+      padding: 5px;
+      height: 50px;
+      width: 100px;
+      border-radius: 10px;
+      color: var(--darkFontColor);
+    }
+  }
+  .button-confirmer {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    border-radius: 20px;
+
+    button {
+      width: 120px;
+      height: 60px;
+      padding: 10px;
+      color: white;
+      outline: none;
+      border: none;
+      background-color: var(--primaryColor);
+      border-radius: 20px;
+    }
+  }
+
+  .main-container {
+    width: 500px;
+    height: fit-content;
+    margin: 20px;
+    background-color: var(--fillInput);
+    border-radius: 40px;
+    padding: 10px 40px;
+
+    h1 {
+      text-align: center;
+      color: var(--darkFontColor);
+    }
+
+    .form-containner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 50px;
+      .input-containner {
+        width: 100%;
+        label {
+          margin-left: 5px;
+          color: var(--darkFontColor);
+        }
+
+        select,
+        input {
+          width: 100%;
+          border: none;
+          outline: none;
+          border: 2px solid var(--darkFontColor);
+          border-radius: 15px;
+          height: 40px;
+          padding: 10px;
+          background-color: var(--fillInput);
+          color: var(--darkFontColor);
+        }
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      input[type="number"] {
+        -moz-appearance: textfield; /* Firefox */
+      }
+
+      .signature-containner {
+        width: 100%;
+        .signature {
+          width: 100%;
+
+          height: 120px;
+          border-radius: 30px;
+          border: 2px solid var(--darkFontColor);
+        }
+      }
+
+      .age-adresse {
+        gap: 10px;
+
+        .age-et-naiss {
+          display: flex;
+          gap: 10px;
+          .age {
+            width: 40%;
+          }
+          .sexe {
+            width: 65%;
+          }
+        }
+      }
+      .datenaiss-et-lieu {
+        display: flex;
+        gap: 10px;
+      }
+
+      .btn-containner {
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+        margin: 20px 0px;
+
+        width: 100%;
+        .button {
+          button {
+            width: 100px;
+            height: 40px;
+            border-radius: 15px;
+            color: var(--darkFontColor);
+          }
+        }
+        .btn-2 button {
+          background-color: var(--primaryColor);
+          color: white;
+          &:hover {
+            background-color: none;
+          }
+        }
+        .btn-1 button {
+          &:hover {
+            background-color: var(--primaryColor);
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.demmandeGennerer-bloc {
+  .contenu {
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import Swal from 'sweetalert2'
 
 // Importation du style
 import './_sidebar.scss'
@@ -9,6 +10,48 @@ import siriusLogo from '@assets/branding/supernova/logo512.png'
 import { toast } from 'react-toastify'
 
 function sidebar() {
+  const logOut = async() =>{
+    const isConfirm = await Swal.fire({
+        title: 'Deconnexion',
+        text: "Etes-vous sur de vouloir vous deconnecter?",
+        icon: 'info',
+        allowEnterKey: true,
+        customClass:{
+            container: 'swalModal'
+        },
+        showCancelButton: true,
+        confirmButtonColor: '#439F47',
+        cancelButtonColor: '#df0b0b',
+        focusCancel:true,
+        showLoaderOnConfirm: true,
+        confirmButtonText: 'Oui, je confirme!',
+        cancelButtonText: 'annuler'
+      }).then((result) => {
+        return result.isConfirmed
+      });
+
+      if(!isConfirm){
+        return;
+      }else{
+        localStorage.removeItem('token')
+        localStorage.removeItem('urlToAccess')
+        Swal.fire({
+            text: 'Déconnexion effectuée. Nous espérons vous revoir bientôt !',
+            icon: 'info',
+            allowEnterKey: true,
+            color: '#fff',
+            customClass:{
+                container: 'swalModal'
+            },
+            background:'#444',
+          })
+          setTimeout(() => {
+            Swal.close();
+          }, 2000);
+        navigate('/login')
+      }
+
+}
   return (
     <div className={"sidebar-content"}>
       <div className="top">

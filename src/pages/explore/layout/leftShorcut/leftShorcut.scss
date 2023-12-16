@@ -1,54 +1,101 @@
-.speedLink-container{
+Mahery Rak
+.speedLink-container {
+  width: 100%;
+  z-index: 20;
+  position: fixed;
+}
+
+.speedLink-container .link-button {
+  color: var(--darkFontColor);
+  position: fixed;
+  left: 0px;
+  top: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 13px;
+  transform: rotate(270deg);
+}
+
+.speedLink-container .link-button.hidden {
+  opacity: 0;
+  top: 48%;
+}
+
+.speedLink-menu {
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  width: 50vw;
+  color: #fff;
+  height: 100vh;
+  font-size: 14px;
+  background-size: cover;
+  box-shadow: 8px 8px 24px 0 rgba(9, 13, 20, 0.4),
+    -4px -4px 8px 0 rgba(224, 224, 255, 0.04), 0 1px 1px 0 rgba(9, 13, 20, 0.4);
+  // background-image: linear-gradient(101deg,rgba(0,0,0,0.02),rgba(255,255,255,.02) 52%,rgba(255,255,255,0.01));
+  background-color: var(--darkColorTransparent);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  left: -1600px;
+  opacity: 0;
+  transform: rotateX(90deg);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.8s ease;
+}
+
+.speedLink-menu.active.hidden,
+.speedLink-menu.hidden {
+  display: none;
+}
+
+.speedLink-menu .close-speedLink {
+  stroke: var(--darkFontColor);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.speedLink-menu.active {
+  left: 0px;
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+
+.speedLink-content {
+  display: flex;
+  overflow-y: auto;
+  height: 95vh;
+  margin: 0px 30px;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .globalMap {
     width: 100%;
-    z-index: 20;
-    position: fixed;
-  }
-
-  .speedLink-container .link-button {
-    color: var(--darkFontColor);
-    position: fixed;
-    left: 0px;
-    top: 50%;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin-left: 20px;
-    font-size: 13px;
-    transform: rotate(270deg);
-  }
-  
-  .speedLink-container .link-button.hidden{
-    opacity: 0;
-    top: 48%;
-  }
-
-  .speedLink-menu  {
-    position: fixed;
-    z-index: 12;
-    top: 0;
-    width: 50vw;
-    color: #fff;
-    height: 100vh;
-    font-size: 14px;
+    margin-top: 90px;
+    height: 500px;
+    background-image: url("../../../../assets/branding/img/pexels-catarina-sousa-68704.jpg");
     background-size: cover;
-    box-shadow: 8px 8px 24px 0 rgba(9,13,20,0.4),-4px -4px 8px 0 rgba(224,224,255,0.04),0 1px 1px 0 rgba(9,13,20,0.4);
-    // background-image: linear-gradient(101deg,rgba(0,0,0,0.02),rgba(255,255,255,.02) 52%,rgba(255,255,255,0.01));
-    background-color: var(--darkColorTransparent);
-    backdrop-filter: blur(5px);
-    padding: 20px;
-    left: -1600px;
-    opacity: 0; 
-    transform: rotateX(90deg);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.8s ease; 
-  }
+    border-radius: 20px;
 
-  .speedLink-menu.active.hidden, .speedLink-menu.hidden{
+    .globalMap-content {
+      background-color: rgba(0, 0, 0, 0.3);
+      height: 100%;
+      padding: 20px 40px;
+    }
+  }
+  .speedLink-menu.active.hidden,
+  .speedLink-menu.hidden {
     display: none;
   }
 
-  .speedLink-menu .close-speedLink{
+  .speedLink-menu .close-speedLink {
     stroke: var(--darkFontColor);
     width: 40px;
     height: 40px;
@@ -58,11 +105,11 @@
     margin: 10px;
     cursor: pointer;
   }
-  
+
   .speedLink-menu.active {
-    left: 0px; 
+    left: 0px;
     transform: rotateX(0deg);
-    opacity: 1; 
+    opacity: 1;
   }
 
   .speedLink-content {
@@ -73,15 +120,15 @@
     flex-direction: column;
     justify-content: space-around;
 
-    .globalMap{
+    .globalMap {
       width: 100%;
       margin-top: 90px;
       height: 500px;
-      background-image: url('../../../../assets/branding/img/pexels-catarina-sousa-68704.jpg');
+      background-image: url("../../../../assets/branding/img/pexels-catarina-sousa-68704.jpg");
       background-size: cover;
       border-radius: 20px;
 
-      .globalMap-content{
+      .globalMap-content {
         background-color: rgba(0, 0, 0, 0.3);
         height: 100%;
         padding: 20px 40px;
@@ -89,16 +136,16 @@
         border-radius: 20px;
         flex-direction: column;
 
-        h1{
+        h1 {
           font-size: 40px;
           color: #fff;
           // margin: 0px 20px;
         }
-        small{
+        small {
           color: #fff;
         }
 
-        .btn-explore{
+        .btn-explore {
           margin-top: 20px;
           border-radius: 30px;
           background-image: var(--linearColor1);
@@ -109,137 +156,163 @@
           text-align: center;
           transition: 0.3s ease-in-out;
 
-           &:hover{
+          &:hover {
             width: 200px;
-           }
-        }     
-      }
-    }
-
-    .location-container{
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 10px;
-      gap: 10px;
-
-      .category {
-        padding: 8px 12px;
-        border-radius: 20px;
-        background-color: var(--darkColorTransparent);
-        font-size: 14px;
-        color: var(--darkFontColor);
-        transition: 0.3s ease-in-out;
-        border: 1px solid transparent;
-        cursor: pointer;
-        font-weight: 500;
-
-        &:hover{
-          background-color: transparent;
-          border: 1px solid var(--darkFontColor);
-          color: var(--darkFontColor);
+          }
         }
       }
     }
 
-    h1{
-      color: var(--darkFontColor);
-      margin-left: 10px;
-      margin-top: 20px;
-    }
+    .location-container {
+      display: flex;
+      border-radius: 20px;
+      flex-direction: column;
 
-    small{
-      color: var(--darkFontColor);
-      margin-left: 10px;
+      h1 {
+        font-size: 40px;
+        color: #fff;
+        margin: 0px 20px;
+      }
+
+      .btn-explore {
+        margin-top: 20px;
+        border-radius: 30px;
+        background-image: var(--linearColor1);
+        padding: 10px;
+        cursor: pointer;
+        width: 140px;
+        color: #fff;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          width: 200px;
+        }
+      }
     }
   }
 
-  .speedLink-content h2{
-    margin: 20px 0px;
-  }
-
-  .speedLink-content .games-plan{
+  .location-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-  }
-  
+    margin-top: 10px;
+    gap: 10px;
 
-    .speedLink-content .games-plan .game-items{
-      width: 95px;
-      margin: 10px;
-    }
-
-    .speedLink-content .games-plan .game-items img{
-      width: 100%;
+    .category {
+      padding: 8px 12px;
       border-radius: 20px;
-    }
+      background-color: var(--darkColorTransparent);
+      font-size: 14px;
+      color: var(--darkFontColor);
+      transition: 0.3s ease-in-out;
+      border: 1px solid transparent;
+      cursor: pointer;
+      font-weight: 500;
 
-    .speedLink-content .games-plan .game-items .status{
-      background-color: var(--primaryColor);
-      padding: 4px;
-      border-radius: 10px;
-      font-size: 9px;
-    }
-
-    .card-actu {
-      width: 100%;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .card-actu-content {
-      background-size: 400px;
-      background-position: center;
-      height: 300px; 
-      margin: 10px;
-      color: #fff;
-      border-radius: 30px;
-      transition: background 0.3s ease-in-out;
-    }
-
-    .speed-link-btn{
-      margin-bottom: 50px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .speed-link-btn .speed-rac-btn{
-      background-color: var(--primaryColor);
-      border-radius: 100px;
-      padding: 14px 26px;
-      color: #fff;
-      margin-bottom: 8px;
-    }
-
-      .speed-link-btn .speed-rac-btn:hover{
-
-
+      &:hover {
+        background-color: transparent;
+        border: 1px solid var(--darkFontColor);
+        color: var(--darkFontColor);
       }
-
-    .swiper-slide-content{
-      padding: 20px;
-      display: flex;
-      height: 100%;
-      justify-content: flex-end;
-      flex-direction: column;
-      text-align: left;
-      background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 30px;
     }
+  }
 
-      .swiper-slide-content h3 {
-        margin-bottom: 10px;
-      }
+  h1 {
+    color: var(--darkFontColor);
+    margin-left: 10px;
+    margin-top: 20px;
+  }
 
-      .swiper-slide-content p {
-        font-size: 14px;
-      }
+  small {
+    color: var(--darkFontColor);
+    margin-left: 10px;
+  }
+}
 
-      .card-actu-content:hover {
-        background-size: 500px;
-      }
+.speedLink-content h2 {
+  margin: 20px 0px;
+}
 
-.speedLink-content .menu-speedLink-content{
+.speedLink-content .games-plan {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.speedLink-content .games-plan .game-items {
+  width: 95px;
+  margin: 10px;
+}
+
+.speedLink-content .games-plan .game-items img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.speedLink-content .games-plan .game-items .status {
+  background-color: var(--primaryColor);
+  padding: 4px;
+  border-radius: 10px;
+  font-size: 9px;
+}
+
+.card-actu {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card-actu-content {
+  background-size: 400px;
+  background-position: center;
+  height: 300px;
+  margin: 10px;
+  color: #fff;
+  border-radius: 30px;
+  transition: background 0.3s ease-in-out;
+}
+
+.speed-link-btn {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.speed-link-btn .speed-rac-btn {
+  background-color: var(--primaryColor);
+  border-radius: 100px;
+  padding: 14px 26px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.speed-link-btn .speed-rac-btn:hover {
+}
+
+.swiper-slide-content {
+  padding: 20px;
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+}
+
+.swiper-slide-content h3 {
+  margin-bottom: 10px;
+}
+
+.swiper-slide-content p {
+  font-size: 14px;
+}
+
+.card-actu-content:hover {
+  background-size: 500px;
+}
+
+.speedLink-content .menu-speedLink-content {
   max-width: 1200px;
   width: 80%;
   display: flex;
@@ -247,7 +320,7 @@
   justify-content: space-around;
 }
 
-.speedLink-content .menu-speedLink-content .round-blur-back{
+.speedLink-content .menu-speedLink-content .round-blur-back {
   width: 300px;
   height: 300px;
   filter: blur(100px);
@@ -257,7 +330,7 @@
   /* background-color: rgb(31, 152, 250, 0.6); */
 }
 
-.speedLink-content .menu-speedLink-content .menu-speedLink{
+.speedLink-content .menu-speedLink-content .menu-speedLink {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -268,7 +341,7 @@
   align-items: center;
 }
 
-.speedLink-content .menu-speedLink-content a{
+.speedLink-content .menu-speedLink-content a {
   font-size: 1.5rem;
   font-weight: 300;
   background-color: transparent;
@@ -277,55 +350,100 @@
   outline: none;
   transition: 0.6 ease-in-out;
   color: var(--darkFontColor);
-  border-bottom: 3px solid transparent ;
+  border-bottom: 3px solid transparent;
 }
 
-.speedLink-content .menu-speedLink-content a:hover{
+.speedLink-content .menu-speedLink-content a:hover {
   /* transform: scale(1.2); */
   font-size: 2rem;
   font-weight: 700;
-  border-bottom: 3px solid #fff ;
+  border-bottom: 3px solid #fff;
 }
 
 .x-container {
-    position: relative;
-    width: 14px;
-    height: 16px;
-    display: flex;
-    margin-left: 10px;
-    justify-content: space-between;
-    transform: rotate(270deg);
-    cursor: pointer;
-  }
-  
-  .x-line {
-    width: 2px;
-    height: 100%;
-    background-color: var(--darkFontColor);
-    transition: transform 0.3s ease;
-  }
-  
-  .line1 {
-    transition: 0.4s ease;
-    transform-origin: bottom right;
-  }
+  position: relative;
+  width: 14px;
+  height: 16px;
+  display: flex;
+  margin-left: 10px;
+  justify-content: space-between;
+  transform: rotate(270deg);
+  cursor: pointer;
+}
 
-  .line3 {
-    height: 25px;
-    transition: 0.4s ease;
-    transform-origin: bottom right;
-  }
-  
-  .line2 {
-    height: 25px;
-    transition: 0.4s ease;
-    transform-origin: bottom left;
-  }
+.x-line {
+  width: 2px;
+  height: 100%;
+  background-color: var(--darkFontColor);
+  transition: transform 0.3s ease;
+}
+
+.line1 {
+  transition: 0.4s ease;
+  transform-origin: bottom right;
+}
+
+.line3 {
+  height: 25px;
+  transition: 0.4s ease;
+  transform-origin: bottom right;
+}
+
+.line2 {
+  height: 25px;
+  transition: 0.4s ease;
+  transform-origin: bottom left;
+}
 /* 
   @media (max-width: 768px) {
     .speedLink-container{
       display: none;
     }
   } */
-  
-  
+
+.back-drop {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--whiteColorTransparent);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+}
+.dialog-municipales {
+  position: absolute;
+  width: 50vw;
+  height: auto;
+  background-color: var(--fillInput);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  border-radius: 40px;
+  padding: 40px 27px;
+  .bloc-choix-municipales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    // .card-maper {
+    //   opacity: 1;
+    // }
+  }
+
+  .Close {
+    width: fit-content;
+    height: 32px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+      g {
+        path {
+          stroke: var(--darkFontColor);
+        }
+      }
+    }
+  }
+}

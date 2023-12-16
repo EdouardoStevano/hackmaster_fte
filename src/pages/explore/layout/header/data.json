@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "Restaurants",
+      "route": "restaurants"
+    },
+    {
+      "id": 2,
+      "name": "Pharmacies",
+      "route": "pharmacies"
+    },
+    {
+      "id": 3,
+      "name": "Hôtels",
+      "route": "hotels"
+    },
+    {
+      "id": 4,
+      "name": "Magasins",
+      "route": "magasins"
+    },
+    {
+      "id": 5,
+      "name": "Parcs",
+      "route": "parcs"
+    },
+    {
+      "id": 6,
+      "name": "Hôpitaux",
+      "route": "hopitaux"
+    },
+    {
+      "id": 7,
+      "name": "Écoles",
+      "route": "ecoles"
+    },
+    {
+        "id": 8,
+        "name": "transport",
+        "route": "ecoles"
+      }
+
+  ]
+  

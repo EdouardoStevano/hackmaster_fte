@@ -1,0 +1,27 @@
+.CardNotification-bloc {
+  background-color: var(--blurcolor2);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+
+  .Titre {
+    font-size: 24px;
+  }
+
+  .btn-close {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    button {
+      width: 40px;
+      height: 40px;
+      font-size: 22px;
+      border-radius: 100%;
+    }
+  }
+}

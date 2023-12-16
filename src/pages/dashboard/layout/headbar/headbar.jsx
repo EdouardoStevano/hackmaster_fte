@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import './_headbar.scss'
 
 // import TokenDecoder from '@utils/helpers/TokenDecoder'
+import avatar from '../../../../assets/branding/img/400x500/img27.jpg'
 
 function Headbar() {
   const [isThemeDark, setIsThemeDark] = useState(false);
@@ -48,15 +49,15 @@ function Headbar() {
           <div className="separator2"></div>
           <div className="mode-btn">
             {/* <img src={localStorage.getItem('SuperMode') === "true" ? sun_icon : moon_icon} alt='EMIT logo' className='switchmode_icon svgicon' width='35px' onClick={() => switch_mode()} /> */}
-            Test
+            
           </div>
 
           <div className="usercard">
-            <div className="userAvatar"></div>
-
+            {/* <div className="userAvatar"></div> */}
+            <img src={avatar} alt="" className="avatar" />
             <div className="userInfo">
               <h4>Edouardo Stevano</h4>
-              <span className='role'>Administrateur</span>
+              <span className='role'>Citoyen</span>
             </div>
           </div>
 

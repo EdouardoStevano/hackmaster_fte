@@ -29,13 +29,13 @@ const ChatbotComponent = () => {
       >
         <img
           style={{
-            width: "16px",
-            margin: "0px 5px 0px 0px",
+            width: "23px",
+            margin: "0px 10px 0px 0px",
           }}
           src={iconsChat}
           alt=""
         />
-        BrainBot
+        <span>Discuter</span>
       </div>
       <div className="chatbot-conntent">
         <Chatbot

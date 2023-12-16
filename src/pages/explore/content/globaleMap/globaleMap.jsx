@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Circle  } from 'react-leaflet';
 import { Icon } from 'leaflet';
+import { useNavigate} from 'react-router-dom';
+
 
 import './globaleMap.scss';
 
@@ -26,6 +28,12 @@ function GlobaleMap() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedBasemap, setSelectedBasemap] = useState('relief'); 
   const [filteredPlaces, setFilteredPlaces] = useState([]); // Ajout de l'état local pour les lieux filtrés
+
+  const navigate = useNavigate();
+
+  const redirectToVisit = (index) => {
+    navigate(`/visit/location/${index}`);
+  };
 
   const handleClick = (categoryName) => {
     setSelectedCategory(categoryName);
@@ -228,7 +236,7 @@ function GlobaleMap() {
                   {category.nom === 'RESTAURENT' ? (
                     <button>MENU</button>
                   ) : null}
-                  <button>Visiter le lieu</button>
+                  <button onClick={() => redirectToVisit(index)}>Visiter le lieu</button>
                 </div>
               </Popup>
             </Marker>

@@ -1,15 +1,78 @@
-import { Link } from "react-router-dom";
-
-import "./exploreHeader.scss";
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from "react";
+import Swal from 'sweetalert2'
+import axios from 'axios';
 import SpeechTotexte from "../../../../components/speechtotexte/SpeechTotexte";
+
+import data from './data.json';
+import "./exploreHeader.scss";
+
 import LogoIcon from "/supericon.png";
 import CardNotification from "./content/card/CardNotification";
+
+
+import avatar from '../../../../assets/branding/img/400x500/img27.jpg'
 
 function ExploreHeader() {
   const [viewNotification, setViewNotification] = useState(false);
   const [viewAssistant, setViewAssistant] = useState(false);
   const [viewProfile, setViewProfile] = useState(false);
+;
+
+  const [searchValue, setSearchValue] = useState('');
+  const navigate = useNavigate();
+  // const decodedToken = TokenDecoder();
+
+  const handleSearch = (value) => {
+    setSearchValue(value);
+    const selectedSuggestion = data.find((item) => item.name === value);
+    if (selectedSuggestion) {
+      navigate.push(`/map/${selectedSuggestion.route}`);
+    }
+  };
+
+  const logOut = async() =>{
+    const isConfirm = await Swal.fire({
+        title: 'Deconnexion',
+        text: "Etes-vous sur de vouloir vous deconnecter?",
+        icon: 'info',
+        allowEnterKey: true,
+        customClass:{
+            container: 'swalModal'
+        },
+        showCancelButton: true,
+        confirmButtonColor: '#439F47',
+        cancelButtonColor: '#df0b0b',
+        focusCancel:true,
+        showLoaderOnConfirm: true,
+        confirmButtonText: 'Oui, je confirme!',
+        cancelButtonText: 'annuler'
+      }).then((result) => {
+        return result.isConfirmed
+      });
+
+      if(!isConfirm){
+        return;
+      }else{
+        localStorage.removeItem('token')
+        localStorage.removeItem('urlToAccess')
+        Swal.fire({
+            text: 'Déconnexion effectuée. Nous espérons vous revoir bientôt !',
+            icon: 'info',
+            allowEnterKey: true,
+            color: '#fff',
+            customClass:{
+                container: 'swalModal'
+            },
+            background:'#444',
+          })
+          setTimeout(() => {
+            Swal.close();
+          }, 2000);
+        navigate('/login')
+      }
+
+}
 
   const handleclickViewNotification = () => {
     setViewNotification(!viewNotification);
@@ -79,14 +142,42 @@ function ExploreHeader() {
               />
             </svg>
 
-            <input type="text" placeholder="Recherhe" />
+            <input
+              type="text"
+              placeholder="Recherhe"
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)} 
+            />
+            {/* Affichage des suggestions s'il y a du texte dans la recherche */}
+            {searchValue && (
+              <div className="suggestions">
+                {data
+                  .filter((suggestion) =>
+                    suggestion.name.toLowerCase().includes(searchValue.toLowerCase())
+                  )
+                  .map((suggestion, index) => (
+                    <Link
+                      key={index}
+                      to={`/map/${suggestion.route}`}
+                      onClick={() => handleSearch(suggestion.name)}
+                      className="suggestion-item"
+                    >
+                      {suggestion.name}
+                    </Link>
+                  ))}
+                {data.filter((suggestion) =>
+                  suggestion.name.toLowerCase().includes(searchValue.toLowerCase())
+                ).length === 0 && (
+                  <p className="no-results">Aucun résultat trouvé</p>
+                )}
+              </div>
+            )}
             <button>Recherche</button>
           </div>
         </div>
 
         <div className="right-header">
           <div className="shorcut">
-            <Link className="shorcut-link">Tableau de bord</Link>
             <Link className="shorcut-link">Actualités</Link>
             <Link className="shorcut-link">Jeux</Link>
           </div>
@@ -183,17 +274,27 @@ function ExploreHeader() {
           </div>
 
           <div className="account" onClick={handleClickAvatar}>
-            <div className="avatar">Avatar</div>
+            {/* <div
+            className="avatar"
+              style={{
+                backgroundImage: `url(../../../../assets/branding/img/400x500/img27.jpg)`,
+                backgroundSize: `cover`
+            }}
+            ></div> */}
+            <img src={avatar} alt="" className="avatar" />
             <div className="info">
-              <small>MyName</small>
-              <small>Citoyen simple</small>
+              <small>Edouardo Stevano</small>
+              <small>Citoyen</small>
             </div>
-            <img src="" alt="" />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 w-px20 marge-left-px10">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+
 
             {viewProfile && (
               <div className="drop-downAvatar">
-                <p>Parametre</p>
-                <p>Deconnection</p>
+                <Link to={'/dashboard'} className='user-rac'>Tableau de bord</Link>
+                <p className='user-rac' onClick={logOut}>Deconnection</p>
               </div>
             )}
           </div>

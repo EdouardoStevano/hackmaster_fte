@@ -230,7 +230,7 @@ p{
 
 @for $margin from 1 through 1000{
     .marge-left-px#{$margin}{
-        margin-bottom: $margin + px;
+        margin-left: $margin + px;
     }
 };
 

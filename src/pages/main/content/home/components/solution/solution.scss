@@ -184,6 +184,17 @@
           transition: all 500ms ease-in;
           transition-delay: 200ms;
         }
+        .imageContainer {
+          margin: 20px;
+
+          width: 700px;
+          height: 300px;
+
+          background: url("../../../../../../assets//branding//img/480x320/techimage.jpg");
+          background-position: center;
+          background-size: cover;
+          border-radius: 40px;
+        }
       }
       .Glass-image {
         animation: moveUpAndDown 1.5s linear infinite alternate-reverse;

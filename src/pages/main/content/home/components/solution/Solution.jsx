@@ -11,6 +11,7 @@ import Roundtext from "@assets/branding/Illustration/RoundText_Dark.png";
 // import SautImage from "../../../../../../assets/image/transparentImage/jakob-rosen-CTd5_C7p__8-unsplash-removebg.png";
 
 import imag3d from "../../../../../../assets/branding/img/480x320/GlassEffect.png";
+import imagtech from "../../../../../../assets/branding/img/480x320/techimage.jpg";
 const Solution = () => {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
@@ -244,7 +245,7 @@ const Solution = () => {
                 <div
                   className={`mobilité-bloc-3 ${viewSolution2 ? "active" : ""}`}
                 >
-                  <div className="bloc-1">
+                  <div className="bloc-1 section-btl-3">
                     <h1>Technologie centrée sur l'humain</h1>
                     <p>
                       Adopter des solutions technologiques qui placent les
@@ -252,6 +253,9 @@ const Solution = () => {
                       simplifier les tâches quotidiennes et à améliorer la
                       qualité de vie de manière inclusive et accessible à tous.
                     </p>
+                    <div className="imageContainer">
+                    
+                    </div>
                   </div>
                   <div className="Glass-image">
                     <img src={imag3d} alt="" />

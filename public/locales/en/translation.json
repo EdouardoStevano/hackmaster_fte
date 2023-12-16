@@ -10,11 +10,19 @@
     "mode": "Dark mode"
   },
 
-  "banner": {
-    "lTitle": "Unlock your potential with our online courses",
-    "bTitle1": "Be brighter",
-    "bTitle2": "than the stars",
-    "bTitle3": "light your own",
-    "bTitle4": "way"
-  }
+  
+    "banner": {
+      "lTitle": "Connecting the Present to the Future",
+      "bTitle1": "Transforming",
+      "bTitle2": "our city",
+      "bTitle3": "into an",
+      "bTitle4": "urban",
+      "bTitle5": "ecosystem",
+      "bTitle6": "smart",
+      "bTitle7": "for everyone",
+      "sTitle": "We aim to make our cities smarter and accessible to all. By utilizing innovative technologies, we seek to enhance urban life for everyone, creating sustainable and connected environments.",
+      "bbtn1": "Learn more",
+      "bbtn2": "Get Started"
+    }
+  
 }

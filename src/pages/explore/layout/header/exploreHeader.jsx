@@ -178,8 +178,9 @@ function ExploreHeader() {
 
         <div className="right-header">
           <div className="shorcut">
-            <Link className="shorcut-link">Actualités</Link>
-            <Link className="shorcut-link">Jeux</Link>
+          <Link to={'/explore'} className="shorcut-link">Accueil</Link>
+            <Link to={'/explore/actu'} className="shorcut-link">Actualités</Link>
+            <Link to={'/explore/game'} className="shorcut-link">Jeux</Link>
           </div>
 
           <div className="icons">

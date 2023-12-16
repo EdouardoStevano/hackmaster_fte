@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Spline from "@splinetool/react-spline";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
+import { t } from '@utils/helpers/translation/i18nHelper'
 
 // Styles importation
 import "./mainBanner.scss";
@@ -83,22 +84,22 @@ function MainBanner() {
         </div> */}
 
         <div className="w-p100">
-          <small className="small-title">Connectons le présent au futur</small>
+          <small className="small-title">{t('banner.lTitle')}</small>
           <div className="lines-1">
-              <h1>Transformons <img src={RoundStyle} alt="Round Style" width={'120px'}/>  notre ville</h1>
+              <h1>{t('banner.bTitle1')} <img src={RoundStyle} alt="Round Style" width={'120px'}/>  {t('banner.bTitle2')}</h1>
           </div>
           <div className="lines-2">
-                <h1>en un</h1> <span>écosystème<img src={LineStyle} alt="Round Style" width={'400px'}/></span> <h1>urbain</h1>
+                <h1>{t('banner.bTitle3')}</h1> <span>{t('banner.bTitle4')}<img src={LineStyle} alt="Round Style" width={'400px'}/></span> <h1>{t('banner.bTitle5')}</h1>
           </div>
           <div className="lines-3">
-          <h1><span>intelligent</span>pour tous. <img src={RoundStyle2} alt="Round Style" width={'60px'}/> </h1>
+          <h1><span>{t('banner.bTitle6')}</span>{t('banner.bTitle7')} <img src={RoundStyle2} alt="Round Style" width={'60px'}/> </h1>
           </div>
-          <p>Nous cherchons à rendre nos villes plus intelligentes, accessibles à tous. En utilisant des technologies novatrices, nous visons à améliorer la vie urbaine pour chacun, en créant des environnements durables et connectés.</p>
+          <p>{t('banner.sTitle')}</p>
 
           <div className="btn-group-banner">
-            <a href="#presentation" className="read-more">en savoir plus</a>
+            <a href="#presentation" className="read-more">{t('banner.bbtn1')}</a>
             <Link to={"/explore"} className="begin">
-              Commencer
+            {t('banner.bbtn2')}
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
             </svg>

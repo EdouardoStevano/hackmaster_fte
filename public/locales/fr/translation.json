@@ -11,12 +11,17 @@
   },
 
   "banner": {
-    "lTitle": "Déverrouillez votre potentiel avec nos cours en ligne",
-    "bTitle1": "Soyez plus brillant",
-    "bTitle2": "que les étoiles",
-    "bTitle3": "éclairez votre propre",
-    "bTitle4": "chemin",
-    "sTitle": "Découvrez l'avenir de l'éducation avec SIRIUS, où le savoir rencontre l'innovation. Développer vos compétences, tout en repoussant les limites de votre potentiel."
+    "lTitle": "Connectons le présent au futur",
+    "bTitle1": "Transformons",
+    "bTitle2": "notre ville",
+    "bTitle3": "en un",
+    "bTitle4": "écosystème",
+    "bTitle5": "urbain",
+    "bTitle6": "intelligent",
+    "bTitle7": "pour tous",
+    "sTitle": "Nous cherchons à rendre nos villes plus intelligentes, accessibles à tous. En utilisant des technologies novatrices, nous visons à améliorer la vie urbaine pour chacun, en créant des environnements durables et connectés.",
+    "bbtn1": "en savoir plus",
+    "bbtn2": "Commencer"
   },
 
   "about": {

@@ -3,6 +3,49 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+  }
+  
+  .modal-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-close {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .modal-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
 }
 
 .headbar-content svg{

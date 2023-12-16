@@ -5,12 +5,23 @@ import './_headbar.scss'
 
 // import TokenDecoder from '@utils/helpers/TokenDecoder'
 import avatar from '../../../../assets/branding/img/400x500/img27.jpg'
+import qr from '../../../../assets/branding/387524050_886379549457712_7481651391537882631_n.jpg'
 
 function Headbar() {
   const [isThemeDark, setIsThemeDark] = useState(false);
   const [Themeicon, setThemeicon] = useState();
   const [modalaiOpen, setModalaiOpen] = useState(false);
   const [qrModal, setqrModal] = useState(false);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
 
 
   return (
@@ -35,11 +46,26 @@ function Headbar() {
           </div>
         </div>
 
-        <div className="headIcon">
+        <div className="headIcon" onClick={handleModalOpen}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 right-icon">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
           <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
         </svg>
+
+        {/* Modal */}
+        {isModalOpen && (
+          <div className="modal-overlay" onClick={handleModalClose}>
+            <div className="modal">
+              <div className="modal-content">
+                <p>Scannez le code QR avec l'application mobile</p>
+                <button className="modal-close" onClick={handleModalClose}>
+                  &#10005;
+                </button>
+                <img src={qr} alt="Avatar" className="modal-image" />
+              </div>
+            </div>
+          </div>
+        )}
 
 
           <div className="separator2"></div>

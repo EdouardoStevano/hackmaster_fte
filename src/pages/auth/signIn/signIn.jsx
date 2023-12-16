@@ -119,7 +119,7 @@ function SignIn() {
   return (
     <div className='SignUp MiddleContent'>
       <div className="signIn-left">
-        <h1>Bienvenue sur Sirius😊</h1>
+        <h1>Bienvenue sur RealIT😊</h1>
         <span>un pas de plus vers votre avenir brillant!</span>
         <p>La porte vers l'apprentissage en ligne de demain. Connectez-vous pour explorer un univers de connaissances infini..</p>
 

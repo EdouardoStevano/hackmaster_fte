@@ -83,17 +83,18 @@
     background-size: cover;
     border-radius: 20px;
 
-<<<<<<< HEAD
     .globalMap-content {
       background-color: rgba(0, 0, 0, 0.3);
       height: 100%;
       padding: 20px 40px;
-=======
-  .speedLink-menu.active.hidden, .speedLink-menu.hidden{
+    }
+  }
+  .speedLink-menu.active.hidden,
+  .speedLink-menu.hidden {
     display: none;
   }
 
-  .speedLink-menu .close-speedLink{
+  .speedLink-menu .close-speedLink {
     stroke: var(--darkFontColor);
     width: 40px;
     height: 40px;
@@ -103,11 +104,11 @@
     margin: 10px;
     cursor: pointer;
   }
-  
+
   .speedLink-menu.active {
-    left: 0px; 
+    left: 0px;
     transform: rotateX(0deg);
-    opacity: 1; 
+    opacity: 1;
   }
 
   .speedLink-content {
@@ -118,15 +119,15 @@
     flex-direction: column;
     justify-content: space-around;
 
-    .globalMap{
+    .globalMap {
       width: 100%;
       margin-top: 90px;
       height: 500px;
-      background-image: url('../../../../assets/branding/img/pexels-catarina-sousa-68704.jpg');
+      background-image: url("../../../../assets/branding/img/pexels-catarina-sousa-68704.jpg");
       background-size: cover;
       border-radius: 20px;
 
-      .globalMap-content{
+      .globalMap-content {
         background-color: rgba(0, 0, 0, 0.3);
         height: 100%;
         padding: 20px 40px;
@@ -134,16 +135,16 @@
         border-radius: 20px;
         flex-direction: column;
 
-        h1{
+        h1 {
           font-size: 40px;
           color: #fff;
           // margin: 0px 20px;
         }
-        small{
+        small {
           color: #fff;
         }
 
-        .btn-explore{
+        .btn-explore {
           margin-top: 20px;
           border-radius: 30px;
           background-image: var(--linearColor1);
@@ -154,15 +155,14 @@
           text-align: center;
           transition: 0.3s ease-in-out;
 
-           &:hover{
+          &:hover {
             width: 200px;
-           }
-        }     
+          }
+        }
       }
     }
 
-    .location-container{
->>>>>>> f609c4806e51f86bece20710a07badf8b5209e66
+    .location-container {
       display: flex;
       border-radius: 20px;
       flex-direction: column;

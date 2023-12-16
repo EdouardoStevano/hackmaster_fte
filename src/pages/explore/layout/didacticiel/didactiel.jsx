@@ -28,7 +28,7 @@ function Didactiel() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
             <h1>DIDACTIEL</h1>
-            <p>"Bienvenue sur RealIT, votre guide vers la ville intelligente ! Avec notre plateforme RealIT, découvrez comment transformer votre ville en un écosystème urbain moderne et connecté.</span>
+            <p>"Bienvenue sur RealIT, votre guide vers la ville intelligente ! Avec notre plateforme RealIT, découvrez comment transformer votre ville en un écosystème urbain moderne et connecté.</p>
           </div>
         </div>
       )}

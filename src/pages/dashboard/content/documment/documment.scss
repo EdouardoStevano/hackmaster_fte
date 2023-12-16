@@ -26,7 +26,11 @@
           height: 100%;
           background-color: rgba(255, 255, 255, 0.125);
           backdrop-filter: blur(3px);
-          
+          padding: 10px;
+
+          .title {
+            font-size: 42px;
+          }
         }
       }
     }

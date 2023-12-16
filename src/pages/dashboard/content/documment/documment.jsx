@@ -5,14 +5,16 @@ const Documment = () => {
   return (
     <div className="document-bloc">
       <div className="depo-containner">
-        <h1>Depostition Documment</h1>
+        <h1>Depostition Document</h1>
 
         <div className="doc-main">
           <div className="doce doc-1">
             <div className="doc">
               <p className="title">Demmande</p>
 
-              <p>demande d'autorisation</p>
+              <p>Demande d'autorisation</p>
+
+              <p></p>
             </div>
           </div>
           <div className="doce doc-2">

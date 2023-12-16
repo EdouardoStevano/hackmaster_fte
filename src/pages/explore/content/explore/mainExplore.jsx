@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Spline from "@splinetool/react-spline";
 
 import "./mainExplore.scss";
 
 function MainExplore() {
+
+  const [showExploreTitle, setShowExploreTitle] = useState(true);
+
+  const toggleExploreTitle = () => {
+    setShowExploreTitle(!showExploreTitle);
+  };
+
   return (
     <div className="middle-explore">
-      <div className="exploreTitle">
+
+      <button className="toggle-btn-collapse" onClick={toggleExploreTitle}>
+        {showExploreTitle ? 'Réduire' : 'Afficher'} le titre
+      </button>
+
+      <div className={`exploreTitle ${showExploreTitle ? 'visible' : 'hidden'}`}>
+
         <h1>Bienvenue sur RealIT </h1>
         <p>
           Vous pouvez naviguer à travers notre RealCity et clique sur le destination que vous voulez. Ci dessous les commandes de navigation.{""}

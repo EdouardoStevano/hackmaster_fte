@@ -1,0 +1,78 @@
+.middle-actu{
+    display: flex;
+    height: 70vh;
+    width: 120vh;
+    justify-content: flex-start;
+    z-index: 1;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .actuExplore{
+        animation: 1s zoom ease-out;
+        
+        .card-actu{
+            width: 100%;
+            padding: 20px 40px;
+            border-radius: 20px;
+            
+            h1{
+                font-weight: 600;
+                font-size: 44px;
+                width: 52vw;
+            }
+
+            .image{
+                margin-top: 10px;
+                height: 250px;
+                position: relative;
+                left: 80px;
+                width: 120%;
+                border-radius: 20px;
+                // animation: 7s float_Animation3 ease infinite;
+                background-image: url('../../../../assets/branding/406738725_122120788562063259_405191472906092426_n.jpg');
+                background-size: cover;
+                transform: rotate(-4deg);
+                box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            .image2{
+                margin-top: 10px;
+                height: 250px;
+                position: relative;
+                left: 80px;
+                width: 120%;
+                border-radius: 20px;
+                // animation: 7s float_Animation3 ease infinite;
+                background-image: url('../../../../assets/branding/img/1920x1080/img13.jpg');
+                background-size: cover;
+                transform: rotate(2deg);
+                box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+            }
+            .image3{
+                margin-top: 10px;
+                height: 250px;
+                position: relative;
+                left: 80px;
+                width: 120%;
+                border-radius: 20px;
+                // animation: 7s float_Animation3 ease infinite;
+                background-image: url('../../../../assets/branding/img/1920x1080/img16.jpg');
+                background-size: cover;
+                transform: rotate(-7deg);
+                box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+            }
+            
+        }
+    }
+}
+
+.showmoreActu{
+    font-size: 20px;
+    margin-top: 30px;
+    position: relative;
+    top: 50px;
+    color: var(--primaryColor);
+}

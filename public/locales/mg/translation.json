@@ -11,12 +11,17 @@
     },
 
     "banner": {
-      "lTitle": "Trandraho ny fahaizanao amin'ny alalan'ny fampianarana omenay",
-      "bTitle1": "Mamirata",
-      "bTitle2": "toy ny kintana",
-      "bTitle3": "hazavao ny",
-      "bTitle4": "lalanao",
-      "sTitle": "Découvrez l'avenir de l'éducation avec SIRIUS, où le savoir rencontre l'innovation. Développer vos compétences, tout en repoussant les limites de votre potentiel."
+      "lTitle": "Mampifandray ny Ankehitriny amin'ny Androany",
+      "bTitle1": "Mampahery",
+      "bTitle2": "tanàna",
+      "bTitle3": "ho",
+      "bTitle4": "faritra",
+      "bTitle5": "ara-toekarena",
+      "bTitle6": "mahay",
+      "bTitle7": "ho an'ny rehetra",
+      "sTitle": "Miandraikitra ny hampifandray ny tanàna ho an'ny rehetra. Amin'ny fanampiana ny teknolojia vaovao, manao antso avo ny fiainam-pirenena eto an-tanàna ho an'ny rehetra, ary miaro ny sehatra maro isan-karazany.",
+      "bbtn1": "Momba ny manaraka",
+      "bbtn2": "Hiditra"
     }
   }
   

@@ -130,24 +130,24 @@ function SpeedLink() {
               <small>Choisissez le lieux que vous voulez explorer.</small>
 
               <div className="location-container">
-                <span class="category">TRANSPORT</span>
-                <span class="category">HÔPITAL</span>
-                <span class="category">SÉCURITÉ</span>
-                <span class="category">ÉCOLE</span>
-                <span class="category">PHARMACIE</span>
-                <span class="category">BOUTIQUE</span>
-                <span class="category">BÂTIMENT ADMINISTRATIF</span>
-                <span class="category">STATION ESSENCE</span>
-                <span class="category">CIMETIÈRE</span>
-                <span class="category">BAR</span>
-                <span class="category">SECOURS</span>
-                <span class="category">TOILETTE PUBLIC</span>
-                <span class="category">KIOSQUE</span>
-                <span class="category">HOTELS & RESATURANTS</span>
-                <span class="category">CASINO</span>
-                <span class="category">AÉROPORT</span>
-                <span class="category">RESTAURANT</span>
-                <span class="category">CYBER CAFE</span>
+                <Link to={'/map/path'} class="category">TRAJET</Link>
+                <Link to={'/map/hopitals'} class="category">HÔPITAL</Link>
+                <Link to={'/map/path'} class="category">SÉCURITÉ</Link>
+                <span to={'/map/ecole'} class="category">ÉCOLE</span>
+                <span to={'/map/pharmacie'} class="category">PHARMACIE</span>
+                <span to={'/map/path'} class="category">BOUTIQUE</span>
+                <span to={'/map/path'} class="category">BÂTIMENT ADMINISTRATIF</span>
+                <span to={'/map/path'} class="category">STATION ESSENCE</span>
+                <span to={'/map/path'} class="category">CIMETIÈRE</span>
+                <span to={'/map/path'} class="category">BAR</span>
+                <span to={'/map/path'} class="category">SECOURS</span>
+                <span to={'/map/path'} class="category">TOILETTE PUBLIC</span>
+                <span to={'/map/path'} class="category">KIOSQUE</span>
+                <span to={'/map/path'} class="category">HOTELS & RESATURANTS</span>
+                <span to={'/map/casino'} class="category">CASINO</span>
+                <span to={'/map/airport'} class="category">AÉROPORT</span>
+                <span to={'/map/restaurant'} class="category">RESTAURANT</span>
+                <span to={'/map/cyber'} class="category">CYBER CAFE</span>
               </div>
 
               <h1>Services :</h1>

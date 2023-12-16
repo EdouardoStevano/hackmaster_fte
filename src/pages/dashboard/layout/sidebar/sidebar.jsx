@@ -120,8 +120,8 @@ function sidebar() {
       <div className="bottom">
         <div className="menu-btn deconnet">
           <Link
-            to={"/"}
-            onclick={() => toast.error("Vous vous êtes deconnecté.")}
+            to={"/explore"}
+            onclick={() => toast.info("Vous vous êtes sorti de votre tableau de bord.")}
           >
             Deconnexion
           </Link>
